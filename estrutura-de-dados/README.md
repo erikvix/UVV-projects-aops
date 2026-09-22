@@ -1,0 +1,18 @@
+# Estrutura de Dados
+
+Atividades, exercícios e projetos da disciplina **Estrutura de Dados**.
+
+## Organização
+
+Cada atividade fica em sua própria subpasta, por exemplo:
+
+```
+estrutura-de-dados/
+├── aula-01/
+├── trabalho-01/
+└── README.md
+```
+
+## Anotações
+
+_Em construção._
