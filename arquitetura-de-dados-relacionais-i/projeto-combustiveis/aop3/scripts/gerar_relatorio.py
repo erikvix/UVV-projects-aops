@@ -64,6 +64,7 @@ SITE = RAIZ / "aop3" / "site"
 RELATORIO = RAIZ / "aop3" / "relatorio"
 EVIDENCIAS = RELATORIO / "evidencias"
 COLETAS = RAIZ / "dados" / "coletas.csv"
+FONTE_TXT = RAIZ / "dados" / "fonte.txt"
 SAIDA_HTML = RELATORIO / "RELATORIO-AOP3.html"
 SAIDA_PDF = RELATORIO / "RELATORIO-AOP3.pdf"
 
@@ -218,6 +219,12 @@ def montar_html(telas, extras, resumo) -> str:
         if dados_de_demonstracao() else ""
     )
 
+    origem = (
+        FONTE_TXT.read_text(encoding="utf-8").strip()
+        if FONTE_TXT.exists() and FONTE_TXT.read_text(encoding="utf-8").strip()
+        else f"coleta realizada pelo grupo em postos de {CIDADE}."
+    )
+
     numero = 0
     blocos_site = []
     for caminho, legenda in telas:
@@ -345,9 +352,9 @@ própria.</p>
 
 <h2>7. Como os dados e os artefatos foram produzidos</h2>
 <ul>
-  <li><b>Origem dos dados:</b> coleta do grupo em postos de {html.escape(CIDADE)}, armazenada no banco
-      relacional da AOP2 e exportada para o arquivo <code>dados/coletas.csv</code>. A Série Histórica de
-      Preços de Combustíveis da ANP pode ser importada com <code>aop3/scripts/importar_anp.py</code>.</li>
+  <li><b>Origem dos dados:</b> {html.escape(origem)} Os registros ficam em
+      <code>dados/coletas.csv</code>, no mesmo formato exportado pelo banco relacional da AOP2;
+      a importação da série da ANP é feita por <code>aop3/scripts/importar_anp.py</code>.</li>
   <li><b>Site:</b> <code>aop3/site/</code> — HTML, CSS e JavaScript sem dependências externas; as quatro
       consultas do item II.d são executadas sobre os mesmos dados do banco, e as consultas SQL
       equivalentes ficam visíveis em cada secao da página.</li>

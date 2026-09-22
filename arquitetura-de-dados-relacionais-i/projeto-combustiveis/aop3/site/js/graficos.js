@@ -128,12 +128,16 @@
           d: d, fill: "none", stroke: s.cor, "stroke-width": 2,
           "stroke-linejoin": "round", "stroke-linecap": "round"
         }));
-        s.pontos.forEach(function (p) {
-          svg.appendChild(el("circle", {
-            cx: posX(p.data), cy: posY(p.valor), r: 3.2,
-            fill: s.cor, stroke: "var(--surface-1)", "stroke-width": 2
-          }));
-        });
+        /* com muitas coletas os marcadores empastelam a linha: some com eles
+           e deixa o valor de cada data para o tooltip */
+        if (s.pontos.length <= 20) {
+          s.pontos.forEach(function (p) {
+            svg.appendChild(el("circle", {
+              cx: posX(p.data), cy: posY(p.valor), r: 3.2,
+              fill: s.cor, stroke: "var(--surface-1)", "stroke-width": 2
+            }));
+          });
+        }
       });
 
       /* rótulos diretos no fim de cada linha, afastados para não colidirem */

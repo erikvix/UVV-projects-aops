@@ -16,41 +16,40 @@ Essa mesma entrega atende também ao trabalho de *Programação Web – Front En
 | Uma planilha CSV por consulta | `planilhas/consulta-1.csv` … `consulta-4.csv` |
 | Consultas SQL do item II.d | [`sql/consultas.sql`](./sql/consultas.sql) |
 | Relatório de evidências em PDF | [`relatorio/RELATORIO-AOP3.pdf`](./relatorio) |
-| Dados brutos (fonte única de tudo) | [`../dados/coletas.csv`](../dados/coletas.csv) |
+| Dados brutos (fonte única de tudo) | [`../dados/coletas.csv`](../dados/coletas.csv) + [`../dados/fonte.txt`](../dados/fonte.txt) |
 
 Tudo é gerado a partir de **um único arquivo**: `dados/coletas.csv`. Trocou o arquivo,
 rodou os dois scripts, site, planilhas e relatório saem atualizados.
 
-> ⚠️ **Os preços que estão no repositório agora são de demonstração** — um conjunto
-> gerado para validar o site de ponta a ponta. Substitua pelos dados reais antes de
-> divulgar (passo 1 abaixo). Enquanto a marca de demonstração estiver ligada, o site
-> exibe um aviso e o relatório traz um alerta em destaque.
+> ✅ **Os preços publicados são reais**: 474 coletas da Série Histórica de Preços de
+> Combustíveis da **ANP**, levantamento de revenda em Vila Velha/ES, de 06/01/2026 a
+> 26/08/2026, em 5 postos de 5 bairros. A origem exata fica registrada em
+> [`../dados/fonte.txt`](../dados/fonte.txt) e aparece no site e no relatório.
 
 ## Passo a passo até a entrega
 
-### 1. Colocar os dados reais
+### 1. Atualizar os dados (opcional — já há dados reais)
 
-Opção A — coleta do grupo / exportação do banco da AOP2: gere um CSV com estas colunas e
+Opção A — baixar de novo da ANP (o script acha os arquivos sozinho no portal):
+
+```bash
+python3 aop3/scripts/importar_anp.py --baixar-ano 2026 --municipio "VILA VELHA" --uf ES
+```
+
+Ele filtra o município, mantém só os quatro combustíveis do trabalho e escolhe os postos
+com mais coletas, preferindo bairros diferentes (requisito II.c). Aceita também arquivos
+já baixados: `python3 aop3/scripts/importar_anp.py precos-*.csv --municipio "VILA VELHA"`.
+
+Opção B — coleta do grupo / exportação do banco da AOP2: gere um CSV com estas colunas e
 salve em `dados/coletas.csv`:
 
 ```
 id_coleta,posto,bairro,endereco,bandeira,combustivel,data_coleta,preco
-1,Posto Exemplo,Praia da Costa,"Av. Exemplo, 100",Ipiranga,Gasolina comum,2025-03-08,6.19
+1,Posto Exemplo,Praia da Costa,"Av. Exemplo, 100",Ipiranga,Gasolina comum,2026-03-08,6.19
 ```
 
-`data_coleta` no formato `aaaa-mm-dd` e `preco` com ponto decimal.
-
-Opção B — série histórica da ANP:
-
-```bash
-# baixe o arquivo semestral de revenda em
-# https://www.gov.br/anp/pt-br/centrais-de-conteudo/dados-abertos/serie-historica-de-precos-de-combustiveis
-python3 aop3/scripts/importar_anp.py ca-2025-01.csv --municipio "VILA VELHA"
-```
-
-Depois, em `aop3/scripts/gerar_site_e_planilhas.py`, troque
-`DADOS_DE_DEMONSTRACAO = True` por `False` (isso remove o aviso do site e corrige o texto
-da fonte dos dados).
+`data_coleta` no formato `aaaa-mm-dd` e `preco` com ponto decimal. Nesse caso, apague ou
+atualize `dados/fonte.txt`, que é o texto de origem exibido ao público.
 
 ### 2. Regerar site e planilhas
 

@@ -2,1093 +2,4279 @@
 window.DADOS = {
  "cidade": "Vila Velha",
  "uf": "ES",
- "demo": true,
- "fonte": "Conjunto de demonstracao gerado por aop3/scripts/gerar_dados_exemplo.py, com 5 postos ficticios distribuidos em bairros reais de Vila Velha/ES. Serve apenas para validar o site: substitua dados/coletas.csv pela coleta de campo do grupo ou pela Serie Historica de Precos de Combustiveis da ANP (aop3/scripts/importar_anp.py) antes da divulgacao.",
+ "demo": false,
+ "fonte": "Serie Historica de Precos de Combustiveis da ANP (Agencia Nacional do Petroleo, Gas Natural e Biocombustiveis), levantamento de precos de revenda em Vila Velha/ES, coletas de 06/01/2026 a 26/08/2026. Dados abertos disponiveis em https://www.gov.br/anp/pt-br/centrais-de-conteudo/dados-abertos/serie-historica-de-precos-de-combustiveis. Selecao: 5 postos em 5 bairros, quatro combustiveis, 474 coletas.",
  "gerado_em": "2026-09-22",
  "periodo": {
-  "inicio": "2025-03-08",
-  "fim": "2025-05-17"
+  "inicio": "2026-01-06",
+  "fim": "2026-08-26"
  },
  "coletas": [
   {
-   "posto": "Posto Cobilândia",
-   "bairro": "Cobilândia",
-   "endereco": "Rod. Carlos Lindenberg, 3900",
-   "bandeira": "Bandeira Branca",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Diesel S10",
-   "data": "2025-03-08",
-   "preco": 5.897
+   "data": "2026-01-07",
+   "preco": 6.09
   },
   {
-   "posto": "Posto Cobilândia",
-   "bairro": "Cobilândia",
-   "endereco": "Rod. Carlos Lindenberg, 3900",
-   "bandeira": "Bandeira Branca",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Diesel S10",
-   "data": "2025-03-22",
-   "preco": 5.951
+   "data": "2026-01-12",
+   "preco": 6.09
   },
   {
-   "posto": "Posto Cobilândia",
-   "bairro": "Cobilândia",
-   "endereco": "Rod. Carlos Lindenberg, 3900",
-   "bandeira": "Bandeira Branca",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Diesel S10",
-   "data": "2025-04-05",
-   "preco": 5.95
+   "data": "2026-01-19",
+   "preco": 6.09
   },
   {
-   "posto": "Posto Cobilândia",
-   "bairro": "Cobilândia",
-   "endereco": "Rod. Carlos Lindenberg, 3900",
-   "bandeira": "Bandeira Branca",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Diesel S10",
-   "data": "2025-04-19",
-   "preco": 6.02
+   "data": "2026-01-26",
+   "preco": 6.09
   },
   {
-   "posto": "Posto Cobilândia",
-   "bairro": "Cobilândia",
-   "endereco": "Rod. Carlos Lindenberg, 3900",
-   "bandeira": "Bandeira Branca",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Diesel S10",
-   "data": "2025-05-03",
-   "preco": 5.969
+   "data": "2026-02-03",
+   "preco": 6.06
   },
   {
-   "posto": "Posto Cobilândia",
-   "bairro": "Cobilândia",
-   "endereco": "Rod. Carlos Lindenberg, 3900",
-   "bandeira": "Bandeira Branca",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Diesel S10",
-   "data": "2025-05-17",
-   "preco": 5.993
+   "data": "2026-02-09",
+   "preco": 6.06
   },
   {
-   "posto": "Posto Cobilândia",
-   "bairro": "Cobilândia",
-   "endereco": "Rod. Carlos Lindenberg, 3900",
-   "bandeira": "Bandeira Branca",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Diesel S10",
+   "data": "2026-02-18",
+   "preco": 6.06
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Diesel S10",
+   "data": "2026-02-23",
+   "preco": 6.06
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Diesel S10",
+   "data": "2026-03-05",
+   "preco": 6.09
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Diesel S10",
+   "data": "2026-03-11",
+   "preco": 6.39
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Diesel S10",
+   "data": "2026-03-16",
+   "preco": 6.39
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Diesel S10",
+   "data": "2026-03-23",
+   "preco": 6.99
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Diesel S10",
+   "data": "2026-05-04",
+   "preco": 6.79
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Diesel S10",
+   "data": "2026-05-18",
+   "preco": 6.79
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Diesel S10",
+   "data": "2026-05-25",
+   "preco": 6.79
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Diesel S10",
+   "data": "2026-06-01",
+   "preco": 6.79
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Diesel S10",
+   "data": "2026-06-08",
+   "preco": 6.74
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Diesel S10",
+   "data": "2026-06-15",
+   "preco": 6.74
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Diesel S10",
+   "data": "2026-06-22",
+   "preco": 6.74
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Diesel S10",
+   "data": "2026-06-29",
+   "preco": 6.74
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Diesel S10",
+   "data": "2026-07-07",
+   "preco": 6.74
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Diesel S10",
+   "data": "2026-07-13",
+   "preco": 6.74
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Diesel S10",
+   "data": "2026-07-21",
+   "preco": 6.74
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Diesel S10",
+   "data": "2026-07-27",
+   "preco": 6.72
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Diesel S10",
+   "data": "2026-08-10",
+   "preco": 6.69
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Diesel S10",
+   "data": "2026-08-24",
+   "preco": 6.69
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Etanol",
-   "data": "2025-03-08",
-   "preco": 4.498
+   "data": "2026-01-07",
+   "preco": 4.72
   },
   {
-   "posto": "Posto Cobilândia",
-   "bairro": "Cobilândia",
-   "endereco": "Rod. Carlos Lindenberg, 3900",
-   "bandeira": "Bandeira Branca",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Etanol",
-   "data": "2025-03-22",
-   "preco": 4.449
+   "data": "2026-01-12",
+   "preco": 4.72
   },
   {
-   "posto": "Posto Cobilândia",
-   "bairro": "Cobilândia",
-   "endereco": "Rod. Carlos Lindenberg, 3900",
-   "bandeira": "Bandeira Branca",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Etanol",
-   "data": "2025-04-05",
-   "preco": 4.546
+   "data": "2026-01-19",
+   "preco": 4.76
   },
   {
-   "posto": "Posto Cobilândia",
-   "bairro": "Cobilândia",
-   "endereco": "Rod. Carlos Lindenberg, 3900",
-   "bandeira": "Bandeira Branca",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Etanol",
-   "data": "2025-04-19",
-   "preco": 4.514
+   "data": "2026-01-26",
+   "preco": 4.76
   },
   {
-   "posto": "Posto Cobilândia",
-   "bairro": "Cobilândia",
-   "endereco": "Rod. Carlos Lindenberg, 3900",
-   "bandeira": "Bandeira Branca",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Etanol",
-   "data": "2025-05-03",
+   "data": "2026-02-03",
+   "preco": 4.79
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Etanol",
+   "data": "2026-02-09",
+   "preco": 4.79
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Etanol",
+   "data": "2026-02-18",
+   "preco": 4.89
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Etanol",
+   "data": "2026-02-23",
+   "preco": 4.89
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Etanol",
+   "data": "2026-03-05",
+   "preco": 4.89
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Etanol",
+   "data": "2026-03-11",
+   "preco": 4.99
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Etanol",
+   "data": "2026-03-16",
+   "preco": 4.99
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Etanol",
+   "data": "2026-03-23",
+   "preco": 4.99
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Etanol",
+   "data": "2026-05-04",
+   "preco": 4.89
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Etanol",
+   "data": "2026-05-18",
+   "preco": 4.89
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Etanol",
+   "data": "2026-05-25",
+   "preco": 4.75
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Etanol",
+   "data": "2026-06-01",
+   "preco": 4.75
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Etanol",
+   "data": "2026-06-08",
    "preco": 4.59
   },
   {
-   "posto": "Posto Cobilândia",
-   "bairro": "Cobilândia",
-   "endereco": "Rod. Carlos Lindenberg, 3900",
-   "bandeira": "Bandeira Branca",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Etanol",
-   "data": "2025-05-17",
-   "preco": 4.623
+   "data": "2026-06-15",
+   "preco": 4.59
   },
   {
-   "posto": "Posto Cobilândia",
-   "bairro": "Cobilândia",
-   "endereco": "Rod. Carlos Lindenberg, 3900",
-   "bandeira": "Bandeira Branca",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Etanol",
+   "data": "2026-06-22",
+   "preco": 4.54
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Etanol",
+   "data": "2026-06-29",
+   "preco": 4.54
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Etanol",
+   "data": "2026-07-07",
+   "preco": 4.54
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Etanol",
+   "data": "2026-07-13",
+   "preco": 4.54
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Etanol",
+   "data": "2026-07-21",
+   "preco": 4.54
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Etanol",
+   "data": "2026-07-27",
+   "preco": 4.49
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Etanol",
+   "data": "2026-08-10",
+   "preco": 4.39
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Etanol",
+   "data": "2026-08-19",
+   "preco": 4.39
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Etanol",
+   "data": "2026-08-24",
+   "preco": 4.39
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Gasolina aditivada",
-   "data": "2025-03-08",
-   "preco": 6.104
+   "data": "2026-01-07",
+   "preco": 6.69
   },
   {
-   "posto": "Posto Cobilândia",
-   "bairro": "Cobilândia",
-   "endereco": "Rod. Carlos Lindenberg, 3900",
-   "bandeira": "Bandeira Branca",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Gasolina aditivada",
-   "data": "2025-03-22",
-   "preco": 6.139
+   "data": "2026-01-12",
+   "preco": 6.69
   },
   {
-   "posto": "Posto Cobilândia",
-   "bairro": "Cobilândia",
-   "endereco": "Rod. Carlos Lindenberg, 3900",
-   "bandeira": "Bandeira Branca",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Gasolina aditivada",
-   "data": "2025-04-05",
-   "preco": 6.267
+   "data": "2026-01-19",
+   "preco": 6.69
   },
   {
-   "posto": "Posto Cobilândia",
-   "bairro": "Cobilândia",
-   "endereco": "Rod. Carlos Lindenberg, 3900",
-   "bandeira": "Bandeira Branca",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Gasolina aditivada",
-   "data": "2025-04-19",
-   "preco": 6.244
+   "data": "2026-01-26",
+   "preco": 6.69
   },
   {
-   "posto": "Posto Cobilândia",
-   "bairro": "Cobilândia",
-   "endereco": "Rod. Carlos Lindenberg, 3900",
-   "bandeira": "Bandeira Branca",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Gasolina aditivada",
-   "data": "2025-05-03",
-   "preco": 6.25
+   "data": "2026-02-03",
+   "preco": 6.59
   },
   {
-   "posto": "Posto Cobilândia",
-   "bairro": "Cobilândia",
-   "endereco": "Rod. Carlos Lindenberg, 3900",
-   "bandeira": "Bandeira Branca",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Gasolina aditivada",
-   "data": "2025-05-17",
-   "preco": 6.266
+   "data": "2026-02-09",
+   "preco": 6.59
   },
   {
-   "posto": "Posto Cobilândia",
-   "bairro": "Cobilândia",
-   "endereco": "Rod. Carlos Lindenberg, 3900",
-   "bandeira": "Bandeira Branca",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-02-18",
+   "preco": 6.49
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-02-23",
+   "preco": 6.49
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-03-05",
+   "preco": 6.46
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-03-11",
+   "preco": 6.99
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-03-16",
+   "preco": 6.99
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-03-23",
+   "preco": 6.96
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-05-04",
+   "preco": 6.82
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-05-18",
+   "preco": 6.82
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-05-25",
+   "preco": 6.79
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-06-01",
+   "preco": 6.79
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-06-08",
+   "preco": 6.75
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-06-15",
+   "preco": 6.75
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-06-22",
+   "preco": 7.07
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-06-29",
+   "preco": 7.07
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-07-07",
+   "preco": 6.96
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-07-13",
+   "preco": 6.89
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-07-21",
+   "preco": 6.89
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-07-27",
+   "preco": 6.79
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-08-10",
+   "preco": 6.75
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-08-24",
+   "preco": 6.69
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Gasolina comum",
-   "data": "2025-03-08",
-   "preco": 5.983
+   "data": "2026-01-07",
+   "preco": 6.29
   },
   {
-   "posto": "Posto Cobilândia",
-   "bairro": "Cobilândia",
-   "endereco": "Rod. Carlos Lindenberg, 3900",
-   "bandeira": "Bandeira Branca",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Gasolina comum",
-   "data": "2025-03-22",
-   "preco": 6.087
+   "data": "2026-01-12",
+   "preco": 6.29
   },
   {
-   "posto": "Posto Cobilândia",
-   "bairro": "Cobilândia",
-   "endereco": "Rod. Carlos Lindenberg, 3900",
-   "bandeira": "Bandeira Branca",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Gasolina comum",
-   "data": "2025-04-05",
-   "preco": 6.134
+   "data": "2026-01-19",
+   "preco": 6.29
   },
   {
-   "posto": "Posto Cobilândia",
-   "bairro": "Cobilândia",
-   "endereco": "Rod. Carlos Lindenberg, 3900",
-   "bandeira": "Bandeira Branca",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Gasolina comum",
-   "data": "2025-04-19",
-   "preco": 6.135
+   "data": "2026-01-26",
+   "preco": 6.29
   },
   {
-   "posto": "Posto Cobilândia",
-   "bairro": "Cobilândia",
-   "endereco": "Rod. Carlos Lindenberg, 3900",
-   "bandeira": "Bandeira Branca",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Gasolina comum",
-   "data": "2025-05-03",
-   "preco": 6.114
+   "data": "2026-02-03",
+   "preco": 6.19
   },
   {
-   "posto": "Posto Cobilândia",
-   "bairro": "Cobilândia",
-   "endereco": "Rod. Carlos Lindenberg, 3900",
-   "bandeira": "Bandeira Branca",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Gasolina comum",
-   "data": "2025-05-17",
-   "preco": 6.216
+   "data": "2026-02-09",
+   "preco": 6.19
   },
   {
-   "posto": "Posto Coqueiral",
-   "bairro": "Coqueiral de Itaparica",
-   "endereco": "Av. Central, 2350",
-   "bandeira": "Petrobras",
-   "combustivel": "Diesel S10",
-   "data": "2025-03-08",
-   "preco": 5.992
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina comum",
+   "data": "2026-02-18",
+   "preco": 6.09
   },
   {
-   "posto": "Posto Coqueiral",
-   "bairro": "Coqueiral de Itaparica",
-   "endereco": "Av. Central, 2350",
-   "bandeira": "Petrobras",
-   "combustivel": "Diesel S10",
-   "data": "2025-03-22",
-   "preco": 6.065
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina comum",
+   "data": "2026-02-23",
+   "preco": 6.09
   },
   {
-   "posto": "Posto Coqueiral",
-   "bairro": "Coqueiral de Itaparica",
-   "endereco": "Av. Central, 2350",
-   "bandeira": "Petrobras",
-   "combustivel": "Diesel S10",
-   "data": "2025-04-05",
-   "preco": 6.039
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina comum",
+   "data": "2026-03-05",
+   "preco": 6.06
   },
   {
-   "posto": "Posto Coqueiral",
-   "bairro": "Coqueiral de Itaparica",
-   "endereco": "Av. Central, 2350",
-   "bandeira": "Petrobras",
-   "combustivel": "Diesel S10",
-   "data": "2025-04-19",
-   "preco": 6.08
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina comum",
+   "data": "2026-03-11",
+   "preco": 6.59
   },
   {
-   "posto": "Posto Coqueiral",
-   "bairro": "Coqueiral de Itaparica",
-   "endereco": "Av. Central, 2350",
-   "bandeira": "Petrobras",
-   "combustivel": "Diesel S10",
-   "data": "2025-05-03",
-   "preco": 6.137
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina comum",
+   "data": "2026-03-16",
+   "preco": 6.59
   },
   {
-   "posto": "Posto Coqueiral",
-   "bairro": "Coqueiral de Itaparica",
-   "endereco": "Av. Central, 2350",
-   "bandeira": "Petrobras",
-   "combustivel": "Diesel S10",
-   "data": "2025-05-17",
-   "preco": 6.115
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina comum",
+   "data": "2026-03-23",
+   "preco": 6.56
   },
   {
-   "posto": "Posto Coqueiral",
-   "bairro": "Coqueiral de Itaparica",
-   "endereco": "Av. Central, 2350",
-   "bandeira": "Petrobras",
-   "combustivel": "Etanol",
-   "data": "2025-03-08",
-   "preco": 4.596
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina comum",
+   "data": "2026-05-04",
+   "preco": 6.42
   },
   {
-   "posto": "Posto Coqueiral",
-   "bairro": "Coqueiral de Itaparica",
-   "endereco": "Av. Central, 2350",
-   "bandeira": "Petrobras",
-   "combustivel": "Etanol",
-   "data": "2025-03-22",
-   "preco": 4.605
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina comum",
+   "data": "2026-05-18",
+   "preco": 6.42
   },
   {
-   "posto": "Posto Coqueiral",
-   "bairro": "Coqueiral de Itaparica",
-   "endereco": "Av. Central, 2350",
-   "bandeira": "Petrobras",
-   "combustivel": "Etanol",
-   "data": "2025-04-05",
-   "preco": 4.57
-  },
-  {
-   "posto": "Posto Coqueiral",
-   "bairro": "Coqueiral de Itaparica",
-   "endereco": "Av. Central, 2350",
-   "bandeira": "Petrobras",
-   "combustivel": "Etanol",
-   "data": "2025-04-19",
-   "preco": 4.61
-  },
-  {
-   "posto": "Posto Coqueiral",
-   "bairro": "Coqueiral de Itaparica",
-   "endereco": "Av. Central, 2350",
-   "bandeira": "Petrobras",
-   "combustivel": "Etanol",
-   "data": "2025-05-03",
-   "preco": 4.63
-  },
-  {
-   "posto": "Posto Coqueiral",
-   "bairro": "Coqueiral de Itaparica",
-   "endereco": "Av. Central, 2350",
-   "bandeira": "Petrobras",
-   "combustivel": "Etanol",
-   "data": "2025-05-17",
-   "preco": 4.672
-  },
-  {
-   "posto": "Posto Coqueiral",
-   "bairro": "Coqueiral de Itaparica",
-   "endereco": "Av. Central, 2350",
-   "bandeira": "Petrobras",
-   "combustivel": "Gasolina aditivada",
-   "data": "2025-03-08",
-   "preco": 6.302
-  },
-  {
-   "posto": "Posto Coqueiral",
-   "bairro": "Coqueiral de Itaparica",
-   "endereco": "Av. Central, 2350",
-   "bandeira": "Petrobras",
-   "combustivel": "Gasolina aditivada",
-   "data": "2025-03-22",
-   "preco": 6.313
-  },
-  {
-   "posto": "Posto Coqueiral",
-   "bairro": "Coqueiral de Itaparica",
-   "endereco": "Av. Central, 2350",
-   "bandeira": "Petrobras",
-   "combustivel": "Gasolina aditivada",
-   "data": "2025-04-05",
-   "preco": 6.377
-  },
-  {
-   "posto": "Posto Coqueiral",
-   "bairro": "Coqueiral de Itaparica",
-   "endereco": "Av. Central, 2350",
-   "bandeira": "Petrobras",
-   "combustivel": "Gasolina aditivada",
-   "data": "2025-04-19",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina comum",
+   "data": "2026-05-25",
    "preco": 6.39
   },
   {
-   "posto": "Posto Coqueiral",
-   "bairro": "Coqueiral de Itaparica",
-   "endereco": "Av. Central, 2350",
-   "bandeira": "Petrobras",
-   "combustivel": "Gasolina aditivada",
-   "data": "2025-05-03",
-   "preco": 6.416
-  },
-  {
-   "posto": "Posto Coqueiral",
-   "bairro": "Coqueiral de Itaparica",
-   "endereco": "Av. Central, 2350",
-   "bandeira": "Petrobras",
-   "combustivel": "Gasolina aditivada",
-   "data": "2025-05-17",
-   "preco": 6.485
-  },
-  {
-   "posto": "Posto Coqueiral",
-   "bairro": "Coqueiral de Itaparica",
-   "endereco": "Av. Central, 2350",
-   "bandeira": "Petrobras",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Gasolina comum",
-   "data": "2025-03-08",
-   "preco": 6.114
+   "data": "2026-06-01",
+   "preco": 6.39
   },
   {
-   "posto": "Posto Coqueiral",
-   "bairro": "Coqueiral de Itaparica",
-   "endereco": "Av. Central, 2350",
-   "bandeira": "Petrobras",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Gasolina comum",
-   "data": "2025-03-22",
-   "preco": 6.151
+   "data": "2026-06-08",
+   "preco": 6.35
   },
   {
-   "posto": "Posto Coqueiral",
-   "bairro": "Coqueiral de Itaparica",
-   "endereco": "Av. Central, 2350",
-   "bandeira": "Petrobras",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Gasolina comum",
-   "data": "2025-04-05",
-   "preco": 6.208
+   "data": "2026-06-15",
+   "preco": 6.35
   },
   {
-   "posto": "Posto Coqueiral",
-   "bairro": "Coqueiral de Itaparica",
-   "endereco": "Av. Central, 2350",
-   "bandeira": "Petrobras",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Gasolina comum",
-   "data": "2025-04-19",
-   "preco": 6.201
+   "data": "2026-06-22",
+   "preco": 6.67
   },
   {
-   "posto": "Posto Coqueiral",
-   "bairro": "Coqueiral de Itaparica",
-   "endereco": "Av. Central, 2350",
-   "bandeira": "Petrobras",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Gasolina comum",
-   "data": "2025-05-03",
-   "preco": 6.322
+   "data": "2026-06-29",
+   "preco": 6.67
   },
   {
-   "posto": "Posto Coqueiral",
-   "bairro": "Coqueiral de Itaparica",
-   "endereco": "Av. Central, 2350",
-   "bandeira": "Petrobras",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
    "combustivel": "Gasolina comum",
-   "data": "2025-05-17",
-   "preco": 6.272
+   "data": "2026-07-07",
+   "preco": 6.56
   },
   {
-   "posto": "Posto Glória",
-   "bairro": "Glória",
-   "endereco": "Av. Carlos Lindenberg, 1750",
-   "bandeira": "Ale",
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina comum",
+   "data": "2026-07-13",
+   "preco": 6.49
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina comum",
+   "data": "2026-07-21",
+   "preco": 6.49
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina comum",
+   "data": "2026-07-27",
+   "preco": 6.39
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina comum",
+   "data": "2026-08-10",
+   "preco": 6.35
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina comum",
+   "data": "2026-08-19",
+   "preco": 6.29
+  },
+  {
+   "posto": "Auto Posto R M Ltda",
+   "bairro": "Praia de Itaparica",
+   "endereco": "Rodovia do Sol, 3701",
+   "bandeira": "Raizen",
+   "combustivel": "Gasolina comum",
+   "data": "2026-08-24",
+   "preco": 6.29
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Branca",
    "combustivel": "Diesel S10",
-   "data": "2025-03-08",
-   "preco": 6.019
+   "data": "2026-01-14",
+   "preco": 5.99
   },
   {
-   "posto": "Posto Glória",
-   "bairro": "Glória",
-   "endereco": "Av. Carlos Lindenberg, 1750",
-   "bandeira": "Ale",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
    "combustivel": "Diesel S10",
-   "data": "2025-03-22",
-   "preco": 5.967
+   "data": "2026-01-27",
+   "preco": 5.99
   },
   {
-   "posto": "Posto Glória",
-   "bairro": "Glória",
-   "endereco": "Av. Carlos Lindenberg, 1750",
-   "bandeira": "Ale",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
    "combustivel": "Diesel S10",
-   "data": "2025-04-05",
-   "preco": 6.014
+   "data": "2026-02-04",
+   "preco": 5.99
   },
   {
-   "posto": "Posto Glória",
-   "bairro": "Glória",
-   "endereco": "Av. Carlos Lindenberg, 1750",
-   "bandeira": "Ale",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
    "combustivel": "Diesel S10",
-   "data": "2025-04-19",
-   "preco": 6.011
+   "data": "2026-02-09",
+   "preco": 5.99
   },
   {
-   "posto": "Posto Glória",
-   "bairro": "Glória",
-   "endereco": "Av. Carlos Lindenberg, 1750",
-   "bandeira": "Ale",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
    "combustivel": "Diesel S10",
-   "data": "2025-05-03",
-   "preco": 6.086
+   "data": "2026-02-16",
+   "preco": 5.99
   },
   {
-   "posto": "Posto Glória",
-   "bairro": "Glória",
-   "endereco": "Av. Carlos Lindenberg, 1750",
-   "bandeira": "Ale",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
    "combustivel": "Diesel S10",
-   "data": "2025-05-17",
-   "preco": 6.062
+   "data": "2026-02-24",
+   "preco": 5.99
   },
   {
-   "posto": "Posto Glória",
-   "bairro": "Glória",
-   "endereco": "Av. Carlos Lindenberg, 1750",
-   "bandeira": "Ale",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-03-03",
+   "preco": 5.99
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-03-12",
+   "preco": 6.39
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-03-17",
+   "preco": 6.49
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-05-05",
+   "preco": 6.99
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-05-12",
+   "preco": 6.99
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-05-20",
+   "preco": 6.99
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-05-26",
+   "preco": 6.99
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-06-01",
+   "preco": 7.29
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-06-08",
+   "preco": 6.99
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-06-17",
+   "preco": 6.99
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-06-23",
+   "preco": 6.99
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-06-30",
+   "preco": 6.99
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-07-15",
+   "preco": 6.97
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-07-20",
+   "preco": 6.97
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-07-28",
+   "preco": 6.97
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-08-03",
+   "preco": 6.97
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-08-12",
+   "preco": 6.97
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-08-19",
+   "preco": 6.97
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-08-26",
+   "preco": 6.97
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Branca",
    "combustivel": "Etanol",
-   "data": "2025-03-08",
-   "preco": 4.522
+   "data": "2026-01-14",
+   "preco": 4.69
   },
   {
-   "posto": "Posto Glória",
-   "bairro": "Glória",
-   "endereco": "Av. Carlos Lindenberg, 1750",
-   "bandeira": "Ale",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
    "combustivel": "Etanol",
-   "data": "2025-03-22",
-   "preco": 4.505
+   "data": "2026-01-27",
+   "preco": 4.99
   },
   {
-   "posto": "Posto Glória",
-   "bairro": "Glória",
-   "endereco": "Av. Carlos Lindenberg, 1750",
-   "bandeira": "Ale",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
    "combustivel": "Etanol",
-   "data": "2025-04-05",
-   "preco": 4.619
+   "data": "2026-02-04",
+   "preco": 4.99
   },
   {
-   "posto": "Posto Glória",
-   "bairro": "Glória",
-   "endereco": "Av. Carlos Lindenberg, 1750",
-   "bandeira": "Ale",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
    "combustivel": "Etanol",
-   "data": "2025-04-19",
-   "preco": 4.653
+   "data": "2026-02-09",
+   "preco": 4.99
   },
   {
-   "posto": "Posto Glória",
-   "bairro": "Glória",
-   "endereco": "Av. Carlos Lindenberg, 1750",
-   "bandeira": "Ale",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
    "combustivel": "Etanol",
-   "data": "2025-05-03",
-   "preco": 4.593
+   "data": "2026-02-16",
+   "preco": 4.99
   },
   {
-   "posto": "Posto Glória",
-   "bairro": "Glória",
-   "endereco": "Av. Carlos Lindenberg, 1750",
-   "bandeira": "Ale",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
    "combustivel": "Etanol",
-   "data": "2025-05-17",
-   "preco": 4.634
+   "data": "2026-02-24",
+   "preco": 4.99
   },
   {
-   "posto": "Posto Glória",
-   "bairro": "Glória",
-   "endereco": "Av. Carlos Lindenberg, 1750",
-   "bandeira": "Ale",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-03-03",
+   "preco": 4.99
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-03-12",
+   "preco": 5.19
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-03-17",
+   "preco": 5.19
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-05-05",
+   "preco": 5.09
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-05-12",
+   "preco": 5.09
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-05-20",
+   "preco": 5.09
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-05-26",
+   "preco": 4.99
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-06-01",
+   "preco": 4.99
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-06-08",
+   "preco": 4.99
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-06-17",
+   "preco": 4.99
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-06-23",
+   "preco": 4.99
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-06-30",
+   "preco": 4.99
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-07-15",
+   "preco": 4.97
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-07-20",
+   "preco": 4.97
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-07-28",
+   "preco": 4.97
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-08-03",
+   "preco": 4.97
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-08-12",
+   "preco": 4.97
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-08-19",
+   "preco": 4.97
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-08-26",
+   "preco": 4.97
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Branca",
    "combustivel": "Gasolina aditivada",
-   "data": "2025-03-08",
-   "preco": 6.2
+   "data": "2026-01-14",
+   "preco": 6.39
   },
   {
-   "posto": "Posto Glória",
-   "bairro": "Glória",
-   "endereco": "Av. Carlos Lindenberg, 1750",
-   "bandeira": "Ale",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
    "combustivel": "Gasolina aditivada",
-   "data": "2025-03-22",
-   "preco": 6.244
+   "data": "2026-01-27",
+   "preco": 6.39
   },
   {
-   "posto": "Posto Glória",
-   "bairro": "Glória",
-   "endereco": "Av. Carlos Lindenberg, 1750",
-   "bandeira": "Ale",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
    "combustivel": "Gasolina aditivada",
-   "data": "2025-04-05",
-   "preco": 6.261
+   "data": "2026-02-04",
+   "preco": 6.39
   },
   {
-   "posto": "Posto Glória",
-   "bairro": "Glória",
-   "endereco": "Av. Carlos Lindenberg, 1750",
-   "bandeira": "Ale",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
    "combustivel": "Gasolina aditivada",
-   "data": "2025-04-19",
-   "preco": 6.332
+   "data": "2026-02-09",
+   "preco": 6.39
   },
   {
-   "posto": "Posto Glória",
-   "bairro": "Glória",
-   "endereco": "Av. Carlos Lindenberg, 1750",
-   "bandeira": "Ale",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
    "combustivel": "Gasolina aditivada",
-   "data": "2025-05-03",
-   "preco": 6.315
+   "data": "2026-02-16",
+   "preco": 6.39
   },
   {
-   "posto": "Posto Glória",
-   "bairro": "Glória",
-   "endereco": "Av. Carlos Lindenberg, 1750",
-   "bandeira": "Ale",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
    "combustivel": "Gasolina aditivada",
-   "data": "2025-05-17",
-   "preco": 6.423
+   "data": "2026-02-24",
+   "preco": 6.39
   },
   {
-   "posto": "Posto Glória",
-   "bairro": "Glória",
-   "endereco": "Av. Carlos Lindenberg, 1750",
-   "bandeira": "Ale",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-03-03",
+   "preco": 6.39
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-03-12",
+   "preco": 6.79
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-03-17",
+   "preco": 6.89
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-05-05",
+   "preco": 6.65
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-05-12",
+   "preco": 6.65
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-05-20",
+   "preco": 6.65
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-05-26",
+   "preco": 6.57
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-06-01",
+   "preco": 6.57
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-06-08",
+   "preco": 6.57
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-06-17",
+   "preco": 6.99
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-06-23",
+   "preco": 6.95
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-06-30",
+   "preco": 6.84
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-07-15",
+   "preco": 6.74
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-07-20",
+   "preco": 6.74
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-07-28",
+   "preco": 6.44
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-08-03",
+   "preco": 6.44
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-08-12",
+   "preco": 6.44
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-08-19",
+   "preco": 6.44
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-08-26",
+   "preco": 6.44
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Branca",
    "combustivel": "Gasolina comum",
-   "data": "2025-03-08",
-   "preco": 6.141
+   "data": "2026-01-14",
+   "preco": 6.29
   },
   {
-   "posto": "Posto Glória",
-   "bairro": "Glória",
-   "endereco": "Av. Carlos Lindenberg, 1750",
-   "bandeira": "Ale",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
    "combustivel": "Gasolina comum",
-   "data": "2025-03-22",
-   "preco": 6.132
+   "data": "2026-01-27",
+   "preco": 6.29
   },
   {
-   "posto": "Posto Glória",
-   "bairro": "Glória",
-   "endereco": "Av. Carlos Lindenberg, 1750",
-   "bandeira": "Ale",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
    "combustivel": "Gasolina comum",
-   "data": "2025-04-05",
-   "preco": 6.204
+   "data": "2026-02-04",
+   "preco": 6.29
   },
   {
-   "posto": "Posto Glória",
-   "bairro": "Glória",
-   "endereco": "Av. Carlos Lindenberg, 1750",
-   "bandeira": "Ale",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
    "combustivel": "Gasolina comum",
-   "data": "2025-04-19",
-   "preco": 6.248
+   "data": "2026-02-09",
+   "preco": 6.29
   },
   {
-   "posto": "Posto Glória",
-   "bairro": "Glória",
-   "endereco": "Av. Carlos Lindenberg, 1750",
-   "bandeira": "Ale",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
    "combustivel": "Gasolina comum",
-   "data": "2025-05-03",
-   "preco": 6.265
+   "data": "2026-02-16",
+   "preco": 6.29
   },
   {
-   "posto": "Posto Glória",
-   "bairro": "Glória",
-   "endereco": "Av. Carlos Lindenberg, 1750",
-   "bandeira": "Ale",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
    "combustivel": "Gasolina comum",
-   "data": "2025-05-17",
-   "preco": 6.316
+   "data": "2026-02-24",
+   "preco": 6.29
   },
   {
-   "posto": "Posto Itapoã",
-   "bairro": "Itapoã",
-   "endereco": "Av. Champagnat, 480",
-   "bandeira": "Shell",
-   "combustivel": "Diesel S10",
-   "data": "2025-03-08",
-   "preco": 6.112
-  },
-  {
-   "posto": "Posto Itapoã",
-   "bairro": "Itapoã",
-   "endereco": "Av. Champagnat, 480",
-   "bandeira": "Shell",
-   "combustivel": "Diesel S10",
-   "data": "2025-03-22",
-   "preco": 6.113
-  },
-  {
-   "posto": "Posto Itapoã",
-   "bairro": "Itapoã",
-   "endereco": "Av. Champagnat, 480",
-   "bandeira": "Shell",
-   "combustivel": "Diesel S10",
-   "data": "2025-04-05",
-   "preco": 6.083
-  },
-  {
-   "posto": "Posto Itapoã",
-   "bairro": "Itapoã",
-   "endereco": "Av. Champagnat, 480",
-   "bandeira": "Shell",
-   "combustivel": "Diesel S10",
-   "data": "2025-04-19",
-   "preco": 6.168
-  },
-  {
-   "posto": "Posto Itapoã",
-   "bairro": "Itapoã",
-   "endereco": "Av. Champagnat, 480",
-   "bandeira": "Shell",
-   "combustivel": "Diesel S10",
-   "data": "2025-05-03",
-   "preco": 6.138
-  },
-  {
-   "posto": "Posto Itapoã",
-   "bairro": "Itapoã",
-   "endereco": "Av. Champagnat, 480",
-   "bandeira": "Shell",
-   "combustivel": "Diesel S10",
-   "data": "2025-05-17",
-   "preco": 6.218
-  },
-  {
-   "posto": "Posto Itapoã",
-   "bairro": "Itapoã",
-   "endereco": "Av. Champagnat, 480",
-   "bandeira": "Shell",
-   "combustivel": "Etanol",
-   "data": "2025-03-08",
-   "preco": 4.627
-  },
-  {
-   "posto": "Posto Itapoã",
-   "bairro": "Itapoã",
-   "endereco": "Av. Champagnat, 480",
-   "bandeira": "Shell",
-   "combustivel": "Etanol",
-   "data": "2025-03-22",
-   "preco": 4.579
-  },
-  {
-   "posto": "Posto Itapoã",
-   "bairro": "Itapoã",
-   "endereco": "Av. Champagnat, 480",
-   "bandeira": "Shell",
-   "combustivel": "Etanol",
-   "data": "2025-04-05",
-   "preco": 4.637
-  },
-  {
-   "posto": "Posto Itapoã",
-   "bairro": "Itapoã",
-   "endereco": "Av. Champagnat, 480",
-   "bandeira": "Shell",
-   "combustivel": "Etanol",
-   "data": "2025-04-19",
-   "preco": 4.703
-  },
-  {
-   "posto": "Posto Itapoã",
-   "bairro": "Itapoã",
-   "endereco": "Av. Champagnat, 480",
-   "bandeira": "Shell",
-   "combustivel": "Etanol",
-   "data": "2025-05-03",
-   "preco": 4.738
-  },
-  {
-   "posto": "Posto Itapoã",
-   "bairro": "Itapoã",
-   "endereco": "Av. Champagnat, 480",
-   "bandeira": "Shell",
-   "combustivel": "Etanol",
-   "data": "2025-05-17",
-   "preco": 4.738
-  },
-  {
-   "posto": "Posto Itapoã",
-   "bairro": "Itapoã",
-   "endereco": "Av. Champagnat, 480",
-   "bandeira": "Shell",
-   "combustivel": "Gasolina aditivada",
-   "data": "2025-03-08",
-   "preco": 6.346
-  },
-  {
-   "posto": "Posto Itapoã",
-   "bairro": "Itapoã",
-   "endereco": "Av. Champagnat, 480",
-   "bandeira": "Shell",
-   "combustivel": "Gasolina aditivada",
-   "data": "2025-03-22",
-   "preco": 6.396
-  },
-  {
-   "posto": "Posto Itapoã",
-   "bairro": "Itapoã",
-   "endereco": "Av. Champagnat, 480",
-   "bandeira": "Shell",
-   "combustivel": "Gasolina aditivada",
-   "data": "2025-04-05",
-   "preco": 6.406
-  },
-  {
-   "posto": "Posto Itapoã",
-   "bairro": "Itapoã",
-   "endereco": "Av. Champagnat, 480",
-   "bandeira": "Shell",
-   "combustivel": "Gasolina aditivada",
-   "data": "2025-04-19",
-   "preco": 6.387
-  },
-  {
-   "posto": "Posto Itapoã",
-   "bairro": "Itapoã",
-   "endereco": "Av. Champagnat, 480",
-   "bandeira": "Shell",
-   "combustivel": "Gasolina aditivada",
-   "data": "2025-05-03",
-   "preco": 6.419
-  },
-  {
-   "posto": "Posto Itapoã",
-   "bairro": "Itapoã",
-   "endereco": "Av. Champagnat, 480",
-   "bandeira": "Shell",
-   "combustivel": "Gasolina aditivada",
-   "data": "2025-05-17",
-   "preco": 6.459
-  },
-  {
-   "posto": "Posto Itapoã",
-   "bairro": "Itapoã",
-   "endereco": "Av. Champagnat, 480",
-   "bandeira": "Shell",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
    "combustivel": "Gasolina comum",
-   "data": "2025-03-08",
-   "preco": 6.205
+   "data": "2026-03-03",
+   "preco": 5.99
   },
   {
-   "posto": "Posto Itapoã",
-   "bairro": "Itapoã",
-   "endereco": "Av. Champagnat, 480",
-   "bandeira": "Shell",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
    "combustivel": "Gasolina comum",
-   "data": "2025-03-22",
-   "preco": 6.217
+   "data": "2026-03-12",
+   "preco": 6.39
   },
   {
-   "posto": "Posto Itapoã",
-   "bairro": "Itapoã",
-   "endereco": "Av. Champagnat, 480",
-   "bandeira": "Shell",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
    "combustivel": "Gasolina comum",
-   "data": "2025-04-05",
+   "data": "2026-03-17",
+   "preco": 6.49
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-05-05",
+   "preco": 6.45
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-05-12",
+   "preco": 6.45
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-05-20",
+   "preco": 6.45
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-05-26",
+   "preco": 6.37
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-06-01",
+   "preco": 6.37
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-06-08",
+   "preco": 6.37
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-06-17",
+   "preco": 6.69
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-06-23",
+   "preco": 6.65
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-06-30",
+   "preco": 6.54
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-07-15",
+   "preco": 6.45
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-07-20",
+   "preco": 6.45
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-07-28",
    "preco": 6.27
   },
   {
-   "posto": "Posto Itapoã",
-   "bairro": "Itapoã",
-   "endereco": "Av. Champagnat, 480",
-   "bandeira": "Shell",
-   "combustivel": "Gasolina comum",
-   "data": "2025-04-19",
-   "preco": 6.28
-  },
-  {
-   "posto": "Posto Itapoã",
-   "bairro": "Itapoã",
-   "endereco": "Av. Champagnat, 480",
-   "bandeira": "Shell",
-   "combustivel": "Gasolina comum",
-   "data": "2025-05-03",
-   "preco": 6.338
-  },
-  {
-   "posto": "Posto Itapoã",
-   "bairro": "Itapoã",
-   "endereco": "Av. Champagnat, 480",
-   "bandeira": "Shell",
-   "combustivel": "Gasolina comum",
-   "data": "2025-05-17",
-   "preco": 6.353
-  },
-  {
-   "posto": "Posto Praia da Costa",
-   "bairro": "Praia da Costa",
-   "endereco": "Av. Estudante José Júlio de Souza, 1200",
-   "bandeira": "Ipiranga",
-   "combustivel": "Diesel S10",
-   "data": "2025-03-08",
-   "preco": 6.208
-  },
-  {
-   "posto": "Posto Praia da Costa",
-   "bairro": "Praia da Costa",
-   "endereco": "Av. Estudante José Júlio de Souza, 1200",
-   "bandeira": "Ipiranga",
-   "combustivel": "Diesel S10",
-   "data": "2025-03-22",
-   "preco": 6.213
-  },
-  {
-   "posto": "Posto Praia da Costa",
-   "bairro": "Praia da Costa",
-   "endereco": "Av. Estudante José Júlio de Souza, 1200",
-   "bandeira": "Ipiranga",
-   "combustivel": "Diesel S10",
-   "data": "2025-04-05",
-   "preco": 6.207
-  },
-  {
-   "posto": "Posto Praia da Costa",
-   "bairro": "Praia da Costa",
-   "endereco": "Av. Estudante José Júlio de Souza, 1200",
-   "bandeira": "Ipiranga",
-   "combustivel": "Diesel S10",
-   "data": "2025-04-19",
-   "preco": 6.2
-  },
-  {
-   "posto": "Posto Praia da Costa",
-   "bairro": "Praia da Costa",
-   "endereco": "Av. Estudante José Júlio de Souza, 1200",
-   "bandeira": "Ipiranga",
-   "combustivel": "Diesel S10",
-   "data": "2025-05-03",
-   "preco": 6.262
-  },
-  {
-   "posto": "Posto Praia da Costa",
-   "bairro": "Praia da Costa",
-   "endereco": "Av. Estudante José Júlio de Souza, 1200",
-   "bandeira": "Ipiranga",
-   "combustivel": "Diesel S10",
-   "data": "2025-05-17",
-   "preco": 6.228
-  },
-  {
-   "posto": "Posto Praia da Costa",
-   "bairro": "Praia da Costa",
-   "endereco": "Av. Estudante José Júlio de Souza, 1200",
-   "bandeira": "Ipiranga",
-   "combustivel": "Etanol",
-   "data": "2025-03-08",
-   "preco": 4.698
-  },
-  {
-   "posto": "Posto Praia da Costa",
-   "bairro": "Praia da Costa",
-   "endereco": "Av. Estudante José Júlio de Souza, 1200",
-   "bandeira": "Ipiranga",
-   "combustivel": "Etanol",
-   "data": "2025-03-22",
-   "preco": 4.724
-  },
-  {
-   "posto": "Posto Praia da Costa",
-   "bairro": "Praia da Costa",
-   "endereco": "Av. Estudante José Júlio de Souza, 1200",
-   "bandeira": "Ipiranga",
-   "combustivel": "Etanol",
-   "data": "2025-04-05",
-   "preco": 4.688
-  },
-  {
-   "posto": "Posto Praia da Costa",
-   "bairro": "Praia da Costa",
-   "endereco": "Av. Estudante José Júlio de Souza, 1200",
-   "bandeira": "Ipiranga",
-   "combustivel": "Etanol",
-   "data": "2025-04-19",
-   "preco": 4.792
-  },
-  {
-   "posto": "Posto Praia da Costa",
-   "bairro": "Praia da Costa",
-   "endereco": "Av. Estudante José Júlio de Souza, 1200",
-   "bandeira": "Ipiranga",
-   "combustivel": "Etanol",
-   "data": "2025-05-03",
-   "preco": 4.765
-  },
-  {
-   "posto": "Posto Praia da Costa",
-   "bairro": "Praia da Costa",
-   "endereco": "Av. Estudante José Júlio de Souza, 1200",
-   "bandeira": "Ipiranga",
-   "combustivel": "Etanol",
-   "data": "2025-05-17",
-   "preco": 4.82
-  },
-  {
-   "posto": "Posto Praia da Costa",
-   "bairro": "Praia da Costa",
-   "endereco": "Av. Estudante José Júlio de Souza, 1200",
-   "bandeira": "Ipiranga",
-   "combustivel": "Gasolina aditivada",
-   "data": "2025-03-08",
-   "preco": 6.379
-  },
-  {
-   "posto": "Posto Praia da Costa",
-   "bairro": "Praia da Costa",
-   "endereco": "Av. Estudante José Júlio de Souza, 1200",
-   "bandeira": "Ipiranga",
-   "combustivel": "Gasolina aditivada",
-   "data": "2025-03-22",
-   "preco": 6.508
-  },
-  {
-   "posto": "Posto Praia da Costa",
-   "bairro": "Praia da Costa",
-   "endereco": "Av. Estudante José Júlio de Souza, 1200",
-   "bandeira": "Ipiranga",
-   "combustivel": "Gasolina aditivada",
-   "data": "2025-04-05",
-   "preco": 6.511
-  },
-  {
-   "posto": "Posto Praia da Costa",
-   "bairro": "Praia da Costa",
-   "endereco": "Av. Estudante José Júlio de Souza, 1200",
-   "bandeira": "Ipiranga",
-   "combustivel": "Gasolina aditivada",
-   "data": "2025-04-19",
-   "preco": 6.571
-  },
-  {
-   "posto": "Posto Praia da Costa",
-   "bairro": "Praia da Costa",
-   "endereco": "Av. Estudante José Júlio de Souza, 1200",
-   "bandeira": "Ipiranga",
-   "combustivel": "Gasolina aditivada",
-   "data": "2025-05-03",
-   "preco": 6.574
-  },
-  {
-   "posto": "Posto Praia da Costa",
-   "bairro": "Praia da Costa",
-   "endereco": "Av. Estudante José Júlio de Souza, 1200",
-   "bandeira": "Ipiranga",
-   "combustivel": "Gasolina aditivada",
-   "data": "2025-05-17",
-   "preco": 6.631
-  },
-  {
-   "posto": "Posto Praia da Costa",
-   "bairro": "Praia da Costa",
-   "endereco": "Av. Estudante José Júlio de Souza, 1200",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
    "bandeira": "Ipiranga",
    "combustivel": "Gasolina comum",
-   "data": "2025-03-08",
-   "preco": 6.254
+   "data": "2026-08-03",
+   "preco": 6.27
   },
   {
-   "posto": "Posto Praia da Costa",
-   "bairro": "Praia da Costa",
-   "endereco": "Av. Estudante José Júlio de Souza, 1200",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
    "bandeira": "Ipiranga",
    "combustivel": "Gasolina comum",
-   "data": "2025-03-22",
-   "preco": 6.302
+   "data": "2026-08-12",
+   "preco": 6.27
   },
   {
-   "posto": "Posto Praia da Costa",
-   "bairro": "Praia da Costa",
-   "endereco": "Av. Estudante José Júlio de Souza, 1200",
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
    "bandeira": "Ipiranga",
    "combustivel": "Gasolina comum",
-   "data": "2025-04-05",
+   "data": "2026-08-19",
+   "preco": 6.27
+  },
+  {
+   "posto": "Auto Posto de Combustivel RTT Ltda",
+   "bairro": "Divino Espirito Santo",
+   "endereco": "Rua Moema, 38",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-08-26",
+   "preco": 6.27
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-01-07",
+   "preco": 6.09
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-01-12",
+   "preco": 6.09
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-01-27",
+   "preco": 6.29
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-02-02",
+   "preco": 6.29
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-02-10",
+   "preco": 6.29
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-02-16",
+   "preco": 6.29
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-03-17",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-05-04",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-05-19",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-06-02",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-06-10",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-06-16",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-06-23",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-06-30",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-07-07",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-07-15",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-07-20",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-07-29",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-08-03",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-08-12",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-08-18",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-08-26",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-01-07",
+   "preco": 4.59
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-01-12",
+   "preco": 4.59
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-01-27",
+   "preco": 4.79
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-02-02",
+   "preco": 4.79
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-02-10",
+   "preco": 4.79
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-02-16",
+   "preco": 4.89
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-03-17",
+   "preco": 4.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-05-04",
+   "preco": 4.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-05-19",
+   "preco": 4.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-06-02",
+   "preco": 4.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-06-10",
+   "preco": 4.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-06-16",
+   "preco": 4.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-06-23",
+   "preco": 4.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-06-30",
+   "preco": 4.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-07-07",
+   "preco": 4.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-07-15",
+   "preco": 4.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-07-20",
+   "preco": 4.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-07-29",
+   "preco": 4.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-08-03",
+   "preco": 4.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-08-12",
+   "preco": 4.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-08-18",
+   "preco": 4.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-08-26",
+   "preco": 4.99
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-01-07",
+   "preco": 6.69
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-01-12",
+   "preco": 6.69
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-01-27",
+   "preco": 6.69
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-02-02",
+   "preco": 6.69
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-02-10",
+   "preco": 6.69
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-02-16",
+   "preco": 6.59
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-03-17",
+   "preco": 6.79
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-05-04",
+   "preco": 6.79
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-05-19",
+   "preco": 6.79
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-06-02",
+   "preco": 6.79
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-06-10",
+   "preco": 6.79
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-06-16",
+   "preco": 6.89
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-06-23",
+   "preco": 6.89
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-06-30",
+   "preco": 6.89
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-07-07",
+   "preco": 6.89
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-07-15",
+   "preco": 6.89
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-07-20",
+   "preco": 6.89
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-07-29",
+   "preco": 6.89
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-08-03",
+   "preco": 6.89
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-08-12",
+   "preco": 6.89
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-08-18",
+   "preco": 6.89
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-08-26",
+   "preco": 6.89
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-01-07",
    "preco": 6.39
   },
   {
-   "posto": "Posto Praia da Costa",
+   "posto": "Posto Champagnat Ltda",
    "bairro": "Praia da Costa",
-   "endereco": "Av. Estudante José Júlio de Souza, 1200",
+   "endereco": "Rua Hugo Musso, 550",
    "bandeira": "Ipiranga",
    "combustivel": "Gasolina comum",
-   "data": "2025-04-19",
-   "preco": 6.348
+   "data": "2026-01-12",
+   "preco": 6.39
   },
   {
-   "posto": "Posto Praia da Costa",
+   "posto": "Posto Champagnat Ltda",
    "bairro": "Praia da Costa",
-   "endereco": "Av. Estudante José Júlio de Souza, 1200",
+   "endereco": "Rua Hugo Musso, 550",
    "bandeira": "Ipiranga",
    "combustivel": "Gasolina comum",
-   "data": "2025-05-03",
-   "preco": 6.398
+   "data": "2026-01-27",
+   "preco": 6.29
   },
   {
-   "posto": "Posto Praia da Costa",
+   "posto": "Posto Champagnat Ltda",
    "bairro": "Praia da Costa",
-   "endereco": "Av. Estudante José Júlio de Souza, 1200",
+   "endereco": "Rua Hugo Musso, 550",
    "bandeira": "Ipiranga",
    "combustivel": "Gasolina comum",
-   "data": "2025-05-17",
-   "preco": 6.437
+   "data": "2026-02-02",
+   "preco": 6.29
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-02-10",
+   "preco": 6.29
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-02-16",
+   "preco": 6.28
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-03-17",
+   "preco": 6.59
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-05-04",
+   "preco": 6.59
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-05-19",
+   "preco": 6.49
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-06-02",
+   "preco": 6.49
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-06-10",
+   "preco": 6.49
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-06-16",
+   "preco": 6.69
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-06-23",
+   "preco": 6.69
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-06-30",
+   "preco": 6.69
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-07-07",
+   "preco": 6.69
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-07-15",
+   "preco": 6.69
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-07-20",
+   "preco": 6.69
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-07-29",
+   "preco": 6.49
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-08-03",
+   "preco": 6.49
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-08-12",
+   "preco": 6.49
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-08-18",
+   "preco": 6.49
+  },
+  {
+   "posto": "Posto Champagnat Ltda",
+   "bairro": "Praia da Costa",
+   "endereco": "Rua Hugo Musso, 550",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-08-26",
+   "preco": 6.39
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-01-06",
+   "preco": 5.99
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-01-14",
+   "preco": 5.99
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-01-28",
+   "preco": 5.99
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-02-24",
+   "preco": 5.99
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-03-03",
+   "preco": 5.99
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-03-24",
+   "preco": 6.79
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-03-31",
+   "preco": 6.79
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-05-05",
+   "preco": 6.78
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-05-11",
+   "preco": 6.78
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-05-19",
+   "preco": 6.78
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-05-26",
+   "preco": 6.78
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-06-01",
+   "preco": 6.78
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-06-08",
+   "preco": 6.78
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-06-16",
+   "preco": 6.78
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-06-22",
+   "preco": 6.78
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-07-07",
+   "preco": 6.78
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-07-15",
+   "preco": 6.78
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-07-20",
+   "preco": 6.78
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-08-03",
+   "preco": 6.73
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-08-12",
+   "preco": 6.73
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Diesel S10",
+   "data": "2026-08-26",
+   "preco": 6.69
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-01-06",
+   "preco": 4.68
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-01-14",
+   "preco": 4.68
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-01-28",
+   "preco": 4.78
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-02-24",
+   "preco": 4.78
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-03-03",
+   "preco": 4.78
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-03-24",
+   "preco": 4.99
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-03-31",
+   "preco": 4.99
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-05-05",
+   "preco": 4.87
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-05-11",
+   "preco": 4.87
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-05-19",
+   "preco": 4.77
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-05-26",
+   "preco": 4.67
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-06-01",
+   "preco": 4.59
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-06-08",
+   "preco": 4.59
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-06-16",
+   "preco": 4.55
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-06-22",
+   "preco": 4.55
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-07-07",
+   "preco": 4.55
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-07-15",
+   "preco": 4.55
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-07-20",
+   "preco": 4.55
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-08-03",
+   "preco": 4.45
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-08-12",
+   "preco": 4.45
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Etanol",
+   "data": "2026-08-26",
+   "preco": 4.39
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-01-06",
+   "preco": 6.59
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-01-14",
+   "preco": 6.59
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-01-28",
+   "preco": 6.59
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-02-24",
+   "preco": 6.49
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-03-03",
+   "preco": 6.39
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-03-24",
+   "preco": 6.79
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-03-31",
+   "preco": 6.59
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-05-05",
+   "preco": 6.66
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-05-11",
+   "preco": 6.66
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-05-19",
+   "preco": 6.59
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-05-26",
+   "preco": 6.59
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-06-01",
+   "preco": 6.55
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-06-08",
+   "preco": 6.55
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-06-16",
+   "preco": 6.55
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-06-22",
+   "preco": 6.87
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-07-07",
+   "preco": 6.76
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-07-15",
+   "preco": 6.69
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-07-20",
+   "preco": 6.69
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-08-03",
+   "preco": 6.68
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-08-12",
+   "preco": 6.68
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-08-26",
+   "preco": 6.58
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-01-06",
+   "preco": 6.29
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-01-14",
+   "preco": 6.29
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-01-28",
+   "preco": 6.29
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-02-24",
+   "preco": 6.19
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-03-03",
+   "preco": 6.09
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-03-24",
+   "preco": 6.59
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-03-31",
+   "preco": 6.59
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-05-05",
+   "preco": 6.46
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-05-11",
+   "preco": 6.46
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-05-19",
+   "preco": 6.39
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-05-26",
+   "preco": 6.39
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-06-01",
+   "preco": 6.35
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-06-08",
+   "preco": 6.35
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-06-16",
+   "preco": 6.35
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-06-22",
+   "preco": 6.67
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-07-07",
+   "preco": 6.56
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-07-15",
+   "preco": 6.49
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-07-20",
+   "preco": 6.49
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-08-03",
+   "preco": 6.38
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-08-12",
+   "preco": 6.38
+  },
+  {
+   "posto": "Posto Itapoa Ltda",
+   "bairro": "Itapoan",
+   "endereco": "Avenida Francelina Setubal, 333",
+   "bandeira": "Ipiranga",
+   "combustivel": "Gasolina comum",
+   "data": "2026-08-26",
+   "preco": 6.28
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Diesel S10",
+   "data": "2026-01-07",
+   "preco": 6.19
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Diesel S10",
+   "data": "2026-01-14",
+   "preco": 6.19
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Diesel S10",
+   "data": "2026-01-22",
+   "preco": 6.19
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Diesel S10",
+   "data": "2026-01-26",
+   "preco": 6.19
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Diesel S10",
+   "data": "2026-02-03",
+   "preco": 6.19
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Diesel S10",
+   "data": "2026-02-10",
+   "preco": 6.19
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Diesel S10",
+   "data": "2026-02-17",
+   "preco": 6.19
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Diesel S10",
+   "data": "2026-03-09",
+   "preco": 6.19
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Diesel S10",
+   "data": "2026-03-16",
+   "preco": 6.39
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Diesel S10",
+   "data": "2026-05-05",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Diesel S10",
+   "data": "2026-05-11",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Diesel S10",
+   "data": "2026-05-18",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Diesel S10",
+   "data": "2026-05-25",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Diesel S10",
+   "data": "2026-06-01",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Diesel S10",
+   "data": "2026-06-15",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Diesel S10",
+   "data": "2026-06-22",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Diesel S10",
+   "data": "2026-06-29",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Diesel S10",
+   "data": "2026-07-07",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Diesel S10",
+   "data": "2026-07-13",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Diesel S10",
+   "data": "2026-07-21",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Diesel S10",
+   "data": "2026-07-27",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Diesel S10",
+   "data": "2026-08-10",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Diesel S10",
+   "data": "2026-08-19",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Diesel S10",
+   "data": "2026-08-24",
+   "preco": 6.99
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Etanol",
+   "data": "2026-01-07",
+   "preco": 4.89
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Etanol",
+   "data": "2026-01-14",
+   "preco": 4.89
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Etanol",
+   "data": "2026-01-22",
+   "preco": 4.89
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Etanol",
+   "data": "2026-01-26",
+   "preco": 4.89
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Etanol",
+   "data": "2026-02-03",
+   "preco": 4.89
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Etanol",
+   "data": "2026-02-10",
+   "preco": 4.89
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Etanol",
+   "data": "2026-02-17",
+   "preco": 4.89
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Etanol",
+   "data": "2026-03-09",
+   "preco": 4.89
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Etanol",
+   "data": "2026-03-16",
+   "preco": 4.99
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Etanol",
+   "data": "2026-05-05",
+   "preco": 5.19
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Etanol",
+   "data": "2026-05-11",
+   "preco": 5.19
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Etanol",
+   "data": "2026-05-18",
+   "preco": 5.19
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Etanol",
+   "data": "2026-05-25",
+   "preco": 5.19
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Etanol",
+   "data": "2026-06-01",
+   "preco": 5.19
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Etanol",
+   "data": "2026-06-15",
+   "preco": 4.89
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Etanol",
+   "data": "2026-06-22",
+   "preco": 4.89
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Etanol",
+   "data": "2026-06-29",
+   "preco": 4.89
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Etanol",
+   "data": "2026-07-07",
+   "preco": 4.89
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Etanol",
+   "data": "2026-07-13",
+   "preco": 4.89
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Etanol",
+   "data": "2026-07-21",
+   "preco": 4.89
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Etanol",
+   "data": "2026-07-27",
+   "preco": 4.89
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Etanol",
+   "data": "2026-08-10",
+   "preco": 4.89
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Etanol",
+   "data": "2026-08-19",
+   "preco": 4.89
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Etanol",
+   "data": "2026-08-24",
+   "preco": 4.89
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-01-07",
+   "preco": 6.49
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-01-14",
+   "preco": 6.49
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-01-22",
+   "preco": 6.49
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-01-26",
+   "preco": 6.49
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-02-03",
+   "preco": 6.49
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-02-10",
+   "preco": 6.39
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-02-17",
+   "preco": 6.39
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-03-09",
+   "preco": 6.29
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-03-16",
+   "preco": 6.79
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-05-05",
+   "preco": 6.69
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-05-11",
+   "preco": 6.69
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-05-18",
+   "preco": 6.69
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-05-25",
+   "preco": 6.69
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-06-01",
+   "preco": 6.59
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-06-15",
+   "preco": 6.59
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-06-22",
+   "preco": 6.89
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-06-29",
+   "preco": 6.89
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-07-07",
+   "preco": 6.89
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-07-13",
+   "preco": 6.79
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-07-21",
+   "preco": 6.69
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-07-27",
+   "preco": 6.69
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-08-10",
+   "preco": 6.59
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-08-19",
+   "preco": 6.59
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina aditivada",
+   "data": "2026-08-24",
+   "preco": 6.59
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina comum",
+   "data": "2026-01-07",
+   "preco": 6.29
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina comum",
+   "data": "2026-01-14",
+   "preco": 6.29
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina comum",
+   "data": "2026-01-22",
+   "preco": 6.29
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina comum",
+   "data": "2026-01-26",
+   "preco": 6.29
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina comum",
+   "data": "2026-02-03",
+   "preco": 6.29
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina comum",
+   "data": "2026-02-10",
+   "preco": 6.19
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina comum",
+   "data": "2026-02-17",
+   "preco": 6.19
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina comum",
+   "data": "2026-03-09",
+   "preco": 6.09
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina comum",
+   "data": "2026-03-16",
+   "preco": 6.59
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina comum",
+   "data": "2026-05-05",
+   "preco": 6.49
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina comum",
+   "data": "2026-05-11",
+   "preco": 6.49
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina comum",
+   "data": "2026-05-18",
+   "preco": 6.49
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina comum",
+   "data": "2026-05-25",
+   "preco": 6.49
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina comum",
+   "data": "2026-06-01",
+   "preco": 6.39
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina comum",
+   "data": "2026-06-15",
+   "preco": 6.39
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina comum",
+   "data": "2026-06-22",
+   "preco": 6.69
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina comum",
+   "data": "2026-06-29",
+   "preco": 6.69
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina comum",
+   "data": "2026-07-07",
+   "preco": 6.69
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina comum",
+   "data": "2026-07-13",
+   "preco": 6.59
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina comum",
+   "data": "2026-07-21",
+   "preco": 6.49
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina comum",
+   "data": "2026-07-27",
+   "preco": 6.49
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina comum",
+   "data": "2026-08-10",
+   "preco": 6.39
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina comum",
+   "data": "2026-08-19",
+   "preco": 6.39
+  },
+  {
+   "posto": "Posto Perim Ltda",
+   "bairro": "Itaparica",
+   "endereco": "Rua Santa Leopoldina, 1650",
+   "bandeira": "Vibra",
+   "combustivel": "Gasolina comum",
+   "data": "2026-08-24",
+   "preco": 6.39
   }
  ]
 };

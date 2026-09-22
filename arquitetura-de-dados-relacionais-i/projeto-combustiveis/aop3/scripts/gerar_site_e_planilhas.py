@@ -23,6 +23,7 @@ from openpyxl.utils import get_column_letter
 
 RAIZ = Path(__file__).resolve().parents[2]
 ENTRADA = RAIZ / "dados" / "coletas.csv"
+FONTE_TXT = RAIZ / "dados" / "fonte.txt"
 SITE_JS = RAIZ / "aop3" / "site" / "js" / "dados.js"
 PLANILHAS = RAIZ / "aop3" / "planilhas"
 XLSX = PLANILHAS / "precos-combustiveis-vila-velha.xlsx"
@@ -31,7 +32,7 @@ CIDADE, UF = "Vila Velha", "ES"
 
 # Enquanto True, o site exibe o aviso de que os precos ainda sao provisorios.
 # Troque para False depois de publicar a coleta real (ou a importacao da ANP).
-DADOS_DE_DEMONSTRACAO = True
+DADOS_DE_DEMONSTRACAO = False
 
 FONTE_DEMONSTRACAO = (
     "Conjunto de demonstracao gerado por aop3/scripts/gerar_dados_exemplo.py, "
@@ -70,6 +71,16 @@ def ler_coletas() -> list[dict]:
     if not coletas:
         raise SystemExit(f"{ENTRADA} esta vazio")
     return sorted(coletas, key=lambda c: (c["posto"], c["combustivel"], c["data"]))
+
+
+def descricao_da_fonte() -> str:
+    """dados/fonte.txt e escrito por importar_anp.py e descreve exatamente de
+    onde vieram as coletas; sem ele, cai nos textos padrao acima."""
+    if FONTE_TXT.exists():
+        texto = FONTE_TXT.read_text(encoding="utf-8").strip()
+        if texto:
+            return texto
+    return FONTE_DEMONSTRACAO if DADOS_DE_DEMONSTRACAO else FONTE_REAL
 
 
 def ordenados(valores) -> list[str]:
@@ -170,7 +181,7 @@ def gravar_dados_js(coletas) -> None:
         "cidade": CIDADE,
         "uf": UF,
         "demo": DADOS_DE_DEMONSTRACAO,
-        "fonte": FONTE_DEMONSTRACAO if DADOS_DE_DEMONSTRACAO else FONTE_REAL,
+        "fonte": descricao_da_fonte(),
         "gerado_em": date.today().isoformat(),
         "periodo": {"inicio": datas[0], "fim": datas[-1]},
         "coletas": coletas,
@@ -277,7 +288,7 @@ def gravar_xlsx(coletas, resultados) -> None:
         ("Postos", f"{len(postos)} ({', '.join(postos)})"),
         ("Bairros", f"{len(bairros)} ({', '.join(bairros)})"),
         ("Combustiveis", ", ".join(ordenados(c["combustivel"] for c in coletas))),
-        ("Fonte dos dados", FONTE_DEMONSTRACAO if DADOS_DE_DEMONSTRACAO else FONTE_REAL),
+        ("Fonte dos dados", descricao_da_fonte()),
         ("", ""),
         ("Abas desta planilha", "Consulta I a Consulta IV: as consultas exigidas no item II.d"),
         ("", "Grafico - cidade / Grafico - postos: os graficos do item II.e"),

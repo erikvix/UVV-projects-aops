@@ -59,12 +59,12 @@
 disciplina Arquitetura de Dados Relacionais I: a divulgação, para a comunidade de Vila Velha - ES, das
 informações de preço de combustíveis armazenadas no banco de dados relacional construido nas
 etapas anteriores (AOP1 — projeto conceitual; AOP2 — projeto lógico e físico).</p>
-<p>A base publicada reúne <b>120 coletas</b> de preço realizadas em
+<p>A base publicada reúne <b>474 coletas</b> de preço realizadas em
 <b>5 postos</b> distribuídos por <b>5 bairros</b>
-(Cobilândia, Coqueiral de Itaparica, Glória, Itapoã, Praia da Costa), para <b>4 combustíveis</b>
-(Diesel S10, Etanol, Gasolina aditivada, Gasolina comum), entre 08/03/2025 e 17/05/2025.
+(Divino Espirito Santo, Itaparica, Itapoan, Praia da Costa, Praia de Itaparica), para <b>4 combustíveis</b>
+(Diesel S10, Etanol, Gasolina aditivada, Gasolina comum), entre 06/01/2026 e 26/08/2026.
 Cada posto tem coletas em datas diferentes, atendendo aos requisitos do item II do enunciado.</p>
-<p class="pendente">[ATENÇÃO: os preços publicados ainda são o conjunto de demonstração. Substitua <code>dados/coletas.csv</code> pela coleta real do grupo (ou pela importação da ANP), rode <code>gerar_site_e_planilhas.py</code> com <code>DADOS_DE_DEMONSTRACAO = False</code> e gere este relatório de novo antes de entregar.]</p>
+
 
 <h2>2. Forma de divulgação escolhida</h2>
 <p>Entre as opções previstas no enunciado, o grupo adotou a <b>opção (a): criação de um website</b>
@@ -105,9 +105,9 @@ própria.</p>
 
 <h2>7. Como os dados e os artefatos foram produzidos</h2>
 <ul>
-  <li><b>Origem dos dados:</b> coleta do grupo em postos de Vila Velha - ES, armazenada no banco
-      relacional da AOP2 e exportada para o arquivo <code>dados/coletas.csv</code>. A Série Histórica de
-      Preços de Combustíveis da ANP pode ser importada com <code>aop3/scripts/importar_anp.py</code>.</li>
+  <li><b>Origem dos dados:</b> Serie Historica de Precos de Combustiveis da ANP (Agencia Nacional do Petroleo, Gas Natural e Biocombustiveis), levantamento de precos de revenda em Vila Velha/ES, coletas de 06/01/2026 a 26/08/2026. Dados abertos disponiveis em https://www.gov.br/anp/pt-br/centrais-de-conteudo/dados-abertos/serie-historica-de-precos-de-combustiveis. Selecao: 5 postos em 5 bairros, quatro combustiveis, 474 coletas. Os registros ficam em
+      <code>dados/coletas.csv</code>, no mesmo formato exportado pelo banco relacional da AOP2;
+      a importação da série da ANP é feita por <code>aop3/scripts/importar_anp.py</code>.</li>
   <li><b>Site:</b> <code>aop3/site/</code> — HTML, CSS e JavaScript sem dependências externas; as quatro
       consultas do item II.d são executadas sobre os mesmos dados do banco, e as consultas SQL
       equivalentes ficam visíveis em cada secao da página.</li>
