@@ -1,0 +1,9 @@
+﻿Combustivel;Tipo;Posto;Endereco;Bairro;Preco (R$);Data da coleta
+Diesel S10;Menor preco;Posto Cobilândia;Rod. Carlos Lindenberg, 3900;Cobilândia;5.897;08/03/2025
+Diesel S10;Maior preco;Posto Praia da Costa;Av. Estudante José Júlio de Souza, 1200;Praia da Costa;6.262;03/05/2025
+Etanol;Menor preco;Posto Cobilândia;Rod. Carlos Lindenberg, 3900;Cobilândia;4.449;22/03/2025
+Etanol;Maior preco;Posto Praia da Costa;Av. Estudante José Júlio de Souza, 1200;Praia da Costa;4.82;17/05/2025
+Gasolina aditivada;Menor preco;Posto Cobilândia;Rod. Carlos Lindenberg, 3900;Cobilândia;6.104;08/03/2025
+Gasolina aditivada;Maior preco;Posto Praia da Costa;Av. Estudante José Júlio de Souza, 1200;Praia da Costa;6.631;17/05/2025
+Gasolina comum;Menor preco;Posto Cobilândia;Rod. Carlos Lindenberg, 3900;Cobilândia;5.983;08/03/2025
+Gasolina comum;Maior preco;Posto Praia da Costa;Av. Estudante José Júlio de Souza, 1200;Praia da Costa;6.437;17/05/2025

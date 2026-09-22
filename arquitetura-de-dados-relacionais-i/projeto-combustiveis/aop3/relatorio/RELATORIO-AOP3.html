@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Relatório AOP3 - Divulgação para a comunidade</title>
+<style>
+  @page { size: A4; margin: 18mm 16mm; }
+  body { font-family: Georgia, "Times New Roman", serif; color: #14140f; font-size: 11.5pt; line-height: 1.55; margin: 0; }
+  h1, h2, h3 { font-family: Helvetica, Arial, sans-serif; color: #10233d; }
+  h1 { font-size: 20pt; margin: 0 0 6px; }
+  h2 { font-size: 13pt; margin: 22px 0 8px; border-bottom: 1px solid #ccc7ba; padding-bottom: 4px; }
+  h3 { font-size: 11.5pt; margin: 16px 0 6px; }
+  p { margin: 0 0 10px; text-align: justify; }
+  .capa { text-align: center; padding: 38mm 0 0; page-break-after: always; }
+  .capa .inst { font-size: 12pt; text-transform: uppercase; letter-spacing: .06em; }
+  .capa .curso { margin-top: 4px; color: #4a4a42; }
+  .capa h1 { margin: 46mm 0 8px; font-size: 22pt; }
+  .capa .sub { font-size: 13pt; color: #3a3a33; }
+  .capa table { margin: 20mm auto 0; width: 84%; }
+  .capa .rodape-capa { margin-top: 30mm; font-size: 11pt; }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0 14px; font-family: Helvetica, Arial, sans-serif; font-size: 10pt; }
+  th, td { border: 1px solid #ccc7ba; padding: 6px 8px; text-align: left; vertical-align: top; }
+  th { background: #eef2f7; }
+  figure { margin: 14px 0 18px; page-break-inside: avoid; }
+  figure img { width: 100%; border: 1px solid #ccc7ba; border-radius: 4px; }
+  figcaption { font-family: Helvetica, Arial, sans-serif; font-size: 9pt; color: #45453c; margin-top: 5px; text-align: left; }
+  ul, ol { margin: 0 0 10px; padding-left: 20px; }
+  li { margin-bottom: 4px; }
+  code { font-family: "DejaVu Sans Mono", Consolas, monospace; font-size: 9.5pt; background: #f1f0eb; padding: 1px 4px; border-radius: 3px; }
+  .pendente { background: #fdf4dc; border-left: 3px solid #d79a00; padding: 8px 10px; font-family: Helvetica, Arial, sans-serif; font-size: 10pt; }
+  .secao { page-break-before: always; }
+</style>
+</head>
+<body>
+
+<div class="capa">
+  <div class="inst">Universidade Vila Velha (UVV)</div>
+  <div class="curso">Análise e Desenvolvimento de Sistemas</div>
+  <div class="curso">Arquitetura de Dados Relacionais I</div>
+
+  <h1>Projeto de Extensão — Preços de Combustíveis</h1>
+  <div class="sub">AOP3 — Relatório de divulgação do trabalho para a comunidade</div>
+  <div class="sub">Vila Velha - ES</div>
+
+  <table>
+    <thead><tr><th>Integrante</th><th>Matrícula</th></tr></thead>
+    <tbody><tr><td>[NOME COMPLETO DO INTEGRANTE 1]</td><td>[MATRÍCULA]</td></tr><tr><td>[NOME COMPLETO DO INTEGRANTE 2]</td><td>[MATRÍCULA]</td></tr><tr><td>[NOME COMPLETO DO INTEGRANTE 3]</td><td>[MATRÍCULA]</td></tr><tr><td>[NOME COMPLETO DO INTEGRANTE 4]</td><td>[MATRÍCULA]</td></tr><tr><td>[NOME COMPLETO DO INTEGRANTE 5]</td><td>[MATRÍCULA]</td></tr></tbody>
+  </table>
+
+  <div class="rodape-capa">
+    Professor(a): [NOME DO PROFESSOR]<br>
+    Semestre: [SEMESTRE/ANO]<br>
+    22/09/2026
+  </div>
+</div>
+
+<h2>1. Objetivo</h2>
+<p>Este relatório apresenta as evidências da terceira etapa (AOP3) do Projeto de Extensão da
+disciplina Arquitetura de Dados Relacionais I: a divulgação, para a comunidade de Vila Velha - ES, das
+informações de preço de combustíveis armazenadas no banco de dados relacional construido nas
+etapas anteriores (AOP1 — projeto conceitual; AOP2 — projeto lógico e físico).</p>
+<p>A base publicada reúne <b>120 coletas</b> de preço realizadas em
+<b>5 postos</b> distribuídos por <b>5 bairros</b>
+(Cobilândia, Coqueiral de Itaparica, Glória, Itapoã, Praia da Costa), para <b>4 combustíveis</b>
+(Diesel S10, Etanol, Gasolina aditivada, Gasolina comum), entre 08/03/2025 e 17/05/2025.
+Cada posto tem coletas em datas diferentes, atendendo aos requisitos do item II do enunciado.</p>
+<p class="pendente">[ATENÇÃO: os preços publicados ainda são o conjunto de demonstração. Substitua <code>dados/coletas.csv</code> pela coleta real do grupo (ou pela importação da ANP), rode <code>gerar_site_e_planilhas.py</code> com <code>DADOS_DE_DEMONSTRACAO = False</code> e gere este relatório de novo antes de entregar.]</p>
+
+<h2>2. Forma de divulgação escolhida</h2>
+<p>Entre as opções previstas no enunciado, o grupo adotou a <b>opção (a): criação de um website</b>
+aberto ao público, no qual qualquer pessoa — sem conhecimento técnico e sem instalar nada — consulta
+os preços coletados diretamente do navegador do celular ou do computador.</p>
+<p>A escolha se justifica por três motivos: (i) o site responde a todas as consultas exigidas no item
+II.d de forma interativa, com filtros por combustível, bairro e posto; (ii) permanece disponível
+permanentemente, podendo ser atualizado a cada nova coleta, diferentemente de um cartaz; e (iii)
+o endereço pode ser compartilhado em grupos de mensagens e redes sociais do bairro, ampliando o
+alcance da ação de extensão.</p>
+<p><b>Endereço público do site:</b> <span class="pendente">[PREENCHER: endereço público do site, ex. https://usuario.github.io/...]</span></p>
+
+<h2>3. O que a comunidade encontra no site</h2>
+<p>A página inicial destaca o menor preço atual de cada combustível e organiza o conteúdo em seis
+seções: as quatro consultas obrigatórias, os gráficos de evolução e a área de download das planilhas
+e dos dados abertos. As figuras a seguir registram o site publicado e em funcionamento.</p>
+<figure><img src="evidencias/site-consulta-1.png" alt="Consulta I - menor e maior preço de cada combustível, com posto, endereço, bairro, valor e data da coleta."><figcaption><b>Figura 1.</b> Consulta I - menor e maior preço de cada combustível, com posto, endereço, bairro, valor e data da coleta.</figcaption></figure><figure><img src="evidencias/site-consulta-2.png" alt="Consulta II - preço médio e quantidade de amostras por posto e combustível, com filtros por combustível e bairro."><figcaption><b>Figura 2.</b> Consulta II - preço médio e quantidade de amostras por posto e combustível, com filtros por combustível e bairro.</figcaption></figure><figure><img src="evidencias/site-consulta-3.png" alt="Consulta III - preço mais recente de cada combustível em cada posto."><figcaption><b>Figura 3.</b> Consulta III - preço mais recente de cada combustível em cada posto.</figcaption></figure><figure><img src="evidencias/site-consulta-4.png" alt="Consulta IV - evolução do preço de um combustível em um posto, escolhidos pelo usuário."><figcaption><b>Figura 4.</b> Consulta IV - evolução do preço de um combustível em um posto, escolhidos pelo usuário.</figcaption></figure><figure><img src="evidencias/site-graficos.png" alt="Gráficos do item II.e - evolução do preço médio de cada combustível na cidade e em cada posto."><figcaption><b>Figura 5.</b> Gráficos do item II.e - evolução do preço médio de cada combustível na cidade e em cada posto.</figcaption></figure><figure><img src="evidencias/site-planilhas.png" alt="Planilhas e dados abertos disponibilizados para download pela comunidade."><figcaption><b>Figura 6.</b> Planilhas e dados abertos disponibilizados para download pela comunidade.</figcaption></figure>
+
+<h2 class="secao">4. Evidências da divulgação junto a comunidade</h2>
+<p>Além da publicacao do site, o grupo divulgou o endereço nos canais listados abaixo. As imagens
+seguintes comprovam essa divulgação.</p>
+<table>
+  <thead><tr><th>Canal / local</th><th>Data</th><th>Público alcancado</th><th>Observação</th></tr></thead>
+  <tbody><tr><td>[Ex.: grupo de WhatsApp do bairro X]</td><td>[dd/mm/aaaa]</td><td>[nº de pessoas]</td><td>[como foi feito]</td></tr><tr><td>[Ex.: perfil do grupo no Instagram]</td><td>[dd/mm/aaaa]</td><td>[nº de visualizacoes]</td><td>[link da publicacao]</td></tr><tr><td>[Ex.: mural da associação de moradores]</td><td>[dd/mm/aaaa]</td><td>[público estimado]</td><td>[cartaz com QR Code do site]</td></tr></tbody>
+</table>
+<p class="pendente">[PENDENTE: coloque aqui as evidências da divulgação — prints das publicacoes, fotos do cartaz afixado, conversas de compartilhamento, lista de presenca. Basta salvar as imagens em <code>aop3/relatorio/evidencias/</code> (legendas opcionais em <code>legendas.csv</code>, no formato <code>arquivo;legenda</code>) e rodar este script de novo.]</p>
+
+<h2>5. Retorno da comunidade</h2>
+<p class="pendente">[PREENCHER: comentários, dúvidas e sugestões recebidas; numero de acessos ao
+site, se houver medição; relato de moradores que usaram a consulta antes de abastecer.]</p>
+
+<h2>6. Conclusão</h2>
+<p>A etapa cumpriu o objetivo de levar a informação produzida no banco de dados para fora da sala de
+aula: os preços coletados deixaram de ser um conjunto de tabelas e passaram a ser uma consulta
+publica, gratuita e de leitura simples, capaz de ajudar o morador a decidir onde abastecer. O mesmo
+material tambem ficou disponível em planilha, para quem preferir analisar os números por conta
+própria.</p>
+
+<h2>7. Como os dados e os artefatos foram produzidos</h2>
+<ul>
+  <li><b>Origem dos dados:</b> coleta do grupo em postos de Vila Velha - ES, armazenada no banco
+      relacional da AOP2 e exportada para o arquivo <code>dados/coletas.csv</code>. A Série Histórica de
+      Preços de Combustíveis da ANP pode ser importada com <code>aop3/scripts/importar_anp.py</code>.</li>
+  <li><b>Site:</b> <code>aop3/site/</code> — HTML, CSS e JavaScript sem dependências externas; as quatro
+      consultas do item II.d são executadas sobre os mesmos dados do banco, e as consultas SQL
+      equivalentes ficam visíveis em cada secao da página.</li>
+  <li><b>Planilhas e gráficos:</b> <code>aop3/scripts/gerar_site_e_planilhas.py</code> gera os arquivos de
+      <code>aop3/planilhas/</code>, incluindo a planilha única com as quatro consultas e os dois gráficos
+      exigidos no item II.e.</li>
+  <li><b>Este relatório:</b> <code>aop3/scripts/gerar_relatorio.py</code>, que captura automaticamente as
+      telas do site publicado e reúne as evidências da divulgação.</li>
+</ul>
+
+<p style="margin-top:18px; font-size:9.5pt; color:#55554c;">Relatório gerado em 22/09/2026.</p>
+
+</body>
+</html>

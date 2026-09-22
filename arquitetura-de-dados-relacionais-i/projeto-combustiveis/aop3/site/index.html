@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preço dos Combustíveis em Vila Velha/ES</title>
+<meta name="description" content="Consulta pública dos preços de gasolina comum, gasolina aditivada, etanol e diesel S10 coletados em postos de Vila Velha/ES. Projeto de Extensão - Arquitetura de Dados Relacionais I (UVV).">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛽</text></svg>">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<header class="topo">
+  <div class="container">
+    <div class="linha">
+      <div>
+        <h1>Preço dos combustíveis em <span id="cidade">Vila Velha - ES</span></h1>
+        <p class="sub">Consulta pública dos preços coletados em postos da cidade — gasolina comum, gasolina aditivada, etanol e diesel S10.</p>
+        <span class="selo" id="resumo"></span>
+      </div>
+      <button class="tema" id="alternar-tema" type="button">Tema escuro</button>
+    </div>
+
+    <div class="aviso" id="aviso" hidden>
+      <strong>Dados de demonstração</strong>
+      Os preços exibidos ainda são um conjunto provisório, usado para validar o site.
+      Antes da divulgação à comunidade, substitua <code>dados/coletas.csv</code> pelos preços
+      realmente coletados (ou pela série histórica da ANP) e regere a página — nenhum outro
+      arquivo precisa ser alterado.
+    </div>
+  </div>
+</header>
+
+<nav class="abas" aria-label="Seções do site">
+  <ul>
+    <li><button type="button" data-painel="painel-1" aria-selected="true">Menor e maior preço</button></li>
+    <li><button type="button" data-painel="painel-2" aria-selected="false">Preço médio por posto</button></li>
+    <li><button type="button" data-painel="painel-3" aria-selected="false">Preço mais recente</button></li>
+    <li><button type="button" data-painel="painel-4" aria-selected="false">Evolução por posto</button></li>
+    <li><button type="button" data-painel="painel-5" aria-selected="false">Gráficos</button></li>
+    <li><button type="button" data-painel="painel-6" aria-selected="false">Planilhas e fonte</button></li>
+  </ul>
+</nav>
+
+<main class="container">
+
+  <div class="destaques" id="destaques" aria-label="Menor preço de cada combustível na coleta mais recente"></div>
+
+  <!-- Consulta I -->
+  <section class="painel" id="painel-1">
+    <h2>Consulta I — menor e maior preço de cada combustível</h2>
+    <p class="descricao">Onde está o preço mais barato e o mais caro de cada tipo de combustível em todo o período pesquisado, com posto, endereço, bairro, valor e data da coleta.</p>
+    <div class="cartao">
+      <div id="tabela-1"></div>
+      <details class="sql">
+        <summary>Ver a consulta SQL que gera esta tabela</summary>
+        <pre>WITH precos AS (
+    SELECT cb.nome AS combustivel, p.nome AS posto, p.endereco, b.nome AS bairro,
+           c.preco, c.data_coleta,
+           RANK() OVER (PARTITION BY c.id_combustivel ORDER BY c.preco ASC,  c.data_coleta DESC) AS pos_menor,
+           RANK() OVER (PARTITION BY c.id_combustivel ORDER BY c.preco DESC, c.data_coleta DESC) AS pos_maior
+      FROM coleta c
+      JOIN posto p        ON p.id_posto        = c.id_posto
+      JOIN bairro b       ON b.id_bairro       = p.id_bairro
+      JOIN combustivel cb ON cb.id_combustivel = c.id_combustivel
+)
+SELECT combustivel,
+       CASE WHEN pos_menor = 1 THEN 'Menor preco' ELSE 'Maior preco' END AS tipo,
+       posto, endereco, bairro, preco, data_coleta
+  FROM precos
+ WHERE pos_menor = 1 OR pos_maior = 1
+ ORDER BY combustivel, tipo DESC, preco;</pre>
+      </details>
+    </div>
+  </section>
+
+  <!-- Consulta II -->
+  <section class="painel" id="painel-2" hidden>
+    <h2>Consulta II — preço médio e número de amostras</h2>
+    <p class="descricao">Preço médio de cada combustível em cada posto e quantas coletas sustentam essa média.</p>
+    <div class="filtros">
+      <div class="campo">
+        <label for="f2-combustivel">Combustível</label>
+        <select id="f2-combustivel"></select>
+      </div>
+      <div class="campo">
+        <label for="f2-bairro">Bairro</label>
+        <select id="f2-bairro"></select>
+      </div>
+    </div>
+    <div class="cartao">
+      <div id="tabela-2"></div>
+      <details class="sql">
+        <summary>Ver a consulta SQL que gera esta tabela</summary>
+        <pre>SELECT p.nome AS posto, b.nome AS bairro, cb.nome AS combustivel,
+       ROUND(AVG(c.preco), 3) AS preco_medio, COUNT(*) AS qtd_amostras
+  FROM coleta c
+  JOIN posto p        ON p.id_posto        = c.id_posto
+  JOIN bairro b       ON b.id_bairro       = p.id_bairro
+  JOIN combustivel cb ON cb.id_combustivel = c.id_combustivel
+ GROUP BY p.nome, b.nome, cb.nome
+ ORDER BY cb.nome, preco_medio;</pre>
+      </details>
+    </div>
+  </section>
+
+  <!-- Consulta III -->
+  <section class="painel" id="painel-3" hidden>
+    <h2>Consulta III — preço mais recente em cada posto</h2>
+    <p class="descricao">A última coleta registrada de cada combustível em cada posto: é a tabela para quem quer saber onde abastecer hoje.</p>
+    <div class="filtros">
+      <div class="campo">
+        <label for="f3-combustivel">Combustível</label>
+        <select id="f3-combustivel"></select>
+      </div>
+      <div class="campo">
+        <label for="f3-bairro">Bairro</label>
+        <select id="f3-bairro"></select>
+      </div>
+    </div>
+    <div class="cartao">
+      <div id="tabela-3"></div>
+      <details class="sql">
+        <summary>Ver a consulta SQL que gera esta tabela</summary>
+        <pre>WITH ultima AS (
+    SELECT c.*, ROW_NUMBER() OVER (PARTITION BY c.id_posto, c.id_combustivel
+                                   ORDER BY c.data_coleta DESC, c.id_coleta DESC) AS ordem
+      FROM coleta c
+)
+SELECT p.nome AS posto, b.nome AS bairro, cb.nome AS combustivel, u.preco, u.data_coleta
+  FROM ultima u
+  JOIN posto p        ON p.id_posto        = u.id_posto
+  JOIN bairro b       ON b.id_bairro       = p.id_bairro
+  JOIN combustivel cb ON cb.id_combustivel = u.id_combustivel
+ WHERE u.ordem = 1
+ ORDER BY cb.nome, u.preco;</pre>
+      </details>
+    </div>
+  </section>
+
+  <!-- Consulta IV -->
+  <section class="painel" id="painel-4" hidden>
+    <h2>Consulta IV — evolução do preço ao longo do tempo</h2>
+    <p class="descricao">Escolha um posto e um combustível para ver como o preço se comportou, coleta a coleta.</p>
+    <div class="filtros">
+      <div class="campo">
+        <label for="f4-posto">Posto</label>
+        <select id="f4-posto"></select>
+      </div>
+      <div class="campo">
+        <label for="f4-combustivel">Combustível</label>
+        <select id="f4-combustivel"></select>
+      </div>
+    </div>
+    <div class="cartao">
+      <p class="descricao" id="resumo-4" style="margin-bottom:10px"></p>
+      <div id="grafico-4"></div>
+    </div>
+    <div class="cartao">
+      <h3>Coletas usadas no gráfico</h3>
+      <div id="tabela-4"></div>
+      <details class="sql">
+        <summary>Ver a consulta SQL que gera esta tabela</summary>
+        <pre>SELECT p.nome AS posto, b.nome AS bairro, cb.nome AS combustivel, c.preco, c.data_coleta
+  FROM coleta c
+  JOIN posto p        ON p.id_posto        = c.id_posto
+  JOIN bairro b       ON b.id_bairro       = p.id_bairro
+  JOIN combustivel cb ON cb.id_combustivel = c.id_combustivel
+ WHERE p.nome = :posto AND cb.nome = :combustivel
+ ORDER BY c.data_coleta;</pre>
+      </details>
+    </div>
+  </section>
+
+  <!-- Gráficos do item II.e -->
+  <section class="painel" id="painel-5" hidden>
+    <h2>Gráficos de evolução do preço médio</h2>
+    <p class="descricao">Os dois gráficos pedidos no item II.e do projeto. Passe o mouse (ou o dedo) sobre a área do gráfico para ver os valores de cada data.</p>
+
+    <div class="cartao">
+      <h3>Preço médio de cada combustível na cidade</h3>
+      <div class="legenda" id="legenda-geral"></div>
+      <div id="grafico-geral"></div>
+    </div>
+
+    <h3 style="margin:24px 0 6px">Preço médio de cada combustível em cada posto</h3>
+    <div class="legenda" id="legenda-postos"></div>
+    <div class="multiplos" id="graficos-postos"></div>
+  </section>
+
+  <!-- Planilhas e fonte -->
+  <section class="painel" id="painel-6" hidden>
+    <h2>Planilhas, dados e como isto foi feito</h2>
+    <p class="descricao">Todo o conteúdo do site sai de um único arquivo de coletas, exportado do banco de dados construído na AOP2.</p>
+    <div class="cartao">
+      <h3>Baixar</h3>
+      <ul class="arquivos">
+        <li><a href="../planilhas/precos-combustiveis-vila-velha.xlsx" download>Planilha completa (.xlsx)</a>
+          <span class="obs">Uma aba por consulta (I a IV), uma aba com todas as coletas e duas abas com os gráficos de evolução do preço médio.</span></li>
+        <li><a href="../../dados/coletas.csv" download>Dados brutos das coletas (.csv)</a>
+          <span class="obs">Uma linha por coleta: posto, bairro, endereço, bandeira, combustível, data e preço.</span></li>
+        <li><a href="../sql/consultas.sql" download>Consultas SQL (.sql)</a>
+          <span class="obs">As quatro consultas do item II.d, como rodam no banco de dados.</span></li>
+      </ul>
+    </div>
+    <div class="cartao">
+      <h3>Fonte dos dados</h3>
+      <p class="descricao" id="fonte"></p>
+      <p class="descricao">Última atualização da página: <span id="atualizacao"></span>.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <div class="container">
+    <p><strong>Projeto de Extensão — Arquitetura de Dados Relacionais I</strong> — Universidade Vila Velha (UVV).</p>
+    <p>Os preços são informativos e valem para a data da coleta indicada em cada linha; confira o valor no posto antes de abastecer.</p>
+  </div>
+</footer>
+
+<script src="js/dados.js"></script>
+<script src="js/consultas.js"></script>
+<script src="js/graficos.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

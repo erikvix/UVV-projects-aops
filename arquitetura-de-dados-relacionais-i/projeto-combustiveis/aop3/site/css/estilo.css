@@ -1,0 +1,217 @@
+/* Preço dos Combustíveis - Vila Velha/ES
+   Projeto de Extensão - Arquitetura de Dados Relacionais I */
+
+:root {
+  color-scheme: light;
+  --surface-0: #f5f4f1;
+  --surface-1: #fcfcfb;
+  --surface-2: #efeeea;
+  --border:    #dedcd5;
+  --text-primary:   #0b0b0b;
+  --text-secondary: #52514e;
+  --text-muted:     #75746e;
+  --accent:    #2a78d6;
+  --good:      #1baf7a;
+  --warn-bg:   #fdf6e3;
+  --warn-bd:   #eda100;
+  --series-1: #2a78d6; /* Gasolina comum */
+  --series-2: #eb6834; /* Gasolina aditivada */
+  --series-3: #1baf7a; /* Etanol */
+  --series-4: #eda100; /* Diesel S10 */
+  --radius: 10px;
+  --shadow: 0 1px 2px rgba(11, 11, 11, .06), 0 4px 16px rgba(11, 11, 11, .04);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --surface-0: #121211;
+    --surface-1: #1a1a19;
+    --surface-2: #242423;
+    --border:    #383835;
+    --text-primary:   #ffffff;
+    --text-secondary: #c3c2b7;
+    --text-muted:     #a3a299;
+    --accent:    #3987e5;
+    --good:      #199e70;
+    --warn-bg:   #2b2515;
+    --warn-bd:   #c98500;
+    --series-1: #3987e5;
+    --series-2: #d95926;
+    --series-3: #199e70;
+    --series-4: #c98500;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 4px 16px rgba(0, 0, 0, .3);
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --surface-0: #121211;
+  --surface-1: #1a1a19;
+  --surface-2: #242423;
+  --border:    #383835;
+  --text-primary:   #ffffff;
+  --text-secondary: #c3c2b7;
+  --text-muted:     #a3a299;
+  --accent:    #3987e5;
+  --good:      #199e70;
+  --warn-bg:   #2b2515;
+  --warn-bd:   #c98500;
+  --series-1: #3987e5;
+  --series-2: #d95926;
+  --series-3: #199e70;
+  --series-4: #c98500;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 4px 16px rgba(0, 0, 0, .3);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--surface-0);
+  color: var(--text-primary);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+.container { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+
+/* ---------- cabeçalho ---------- */
+header.topo {
+  background: var(--surface-1);
+  border-bottom: 1px solid var(--border);
+  padding: 28px 0 22px;
+}
+.topo h1 { margin: 0 0 6px; font-size: 1.75rem; letter-spacing: -.01em; }
+.topo p.sub { margin: 0; color: var(--text-secondary); }
+.topo .linha { display: flex; gap: 16px; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; }
+.selo {
+  display: inline-block; margin-top: 10px; padding: 4px 10px;
+  background: var(--surface-2); border: 1px solid var(--border); border-radius: 999px;
+  font-size: .8rem; color: var(--text-secondary);
+}
+button.tema {
+  background: var(--surface-2); color: var(--text-primary);
+  border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 8px 14px; font-size: .875rem; cursor: pointer; min-height: 40px;
+}
+button.tema:hover { border-color: var(--accent); }
+
+/* ---------- aviso de dados provisórios ---------- */
+.aviso {
+  margin: 18px 0 0; padding: 12px 14px;
+  background: var(--warn-bg); border: 1px solid var(--warn-bd);
+  border-left-width: 4px; border-radius: var(--radius);
+  color: var(--text-primary); font-size: .9rem;
+}
+.aviso strong { display: block; margin-bottom: 2px; }
+
+/* ---------- navegação ---------- */
+nav.abas {
+  position: sticky; top: 0; z-index: 20;
+  background: var(--surface-0); border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+}
+nav.abas ul { display: flex; gap: 4px; list-style: none; margin: 0; padding: 8px 16px; max-width: 1120px; margin: 0 auto; }
+nav.abas button {
+  background: none; border: 0; border-radius: var(--radius);
+  padding: 9px 14px; font-size: .9rem; color: var(--text-secondary);
+  cursor: pointer; white-space: nowrap; min-height: 40px;
+}
+nav.abas button:hover { background: var(--surface-2); color: var(--text-primary); }
+nav.abas button[aria-selected="true"] { background: var(--surface-1); color: var(--text-primary); box-shadow: inset 0 0 0 1px var(--border); font-weight: 600; }
+
+/* ---------- seções ---------- */
+section.painel { padding: 26px 0 8px; }
+section.painel[hidden] { display: none; }
+.painel h2 { margin: 0 0 4px; font-size: 1.25rem; }
+.painel p.descricao { margin: 0 0 18px; color: var(--text-secondary); max-width: 68ch; }
+
+.cartao {
+  background: var(--surface-1); border: 1px solid var(--border);
+  border-radius: var(--radius); box-shadow: var(--shadow);
+  padding: 18px; margin-bottom: 20px;
+}
+.cartao > h3 { margin: 0 0 12px; font-size: 1rem; }
+
+/* ---------- filtros ---------- */
+.filtros { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; margin-bottom: 16px; }
+.campo { display: flex; flex-direction: column; gap: 4px; }
+.campo label { font-size: .78rem; text-transform: uppercase; letter-spacing: .04em; color: var(--text-muted); }
+.campo select, .campo input {
+  background: var(--surface-1); color: var(--text-primary);
+  border: 1px solid var(--border); border-radius: 8px;
+  padding: 8px 10px; font-size: .9rem; min-height: 40px; min-width: 180px;
+}
+.campo select:focus-visible, .campo input:focus-visible, button:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 2px;
+}
+
+/* ---------- destaques ---------- */
+.destaques { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 20px; }
+.tile { background: var(--surface-1); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; box-shadow: var(--shadow); }
+.tile .rotulo { display: flex; align-items: center; gap: 8px; font-size: .8rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: .04em; }
+.tile .ponto { width: 10px; height: 10px; border-radius: 3px; flex: none; }
+.tile .valor { font-size: 1.6rem; font-weight: 650; margin: 6px 0 2px; font-variant-numeric: tabular-nums; }
+.tile .onde { font-size: .85rem; color: var(--text-secondary); }
+
+/* ---------- tabelas ---------- */
+.tabela-rolagem { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+thead th {
+  text-align: left; font-size: .78rem; text-transform: uppercase; letter-spacing: .04em;
+  color: var(--text-muted); font-weight: 600;
+  padding: 8px 10px; border-bottom: 1px solid var(--border); white-space: nowrap;
+}
+tbody td { padding: 9px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+tbody tr:last-child td { border-bottom: 0; }
+tbody tr:hover { background: var(--surface-2); }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.marca { display: inline-flex; align-items: center; gap: 7px; }
+.marca .ponto { width: 9px; height: 9px; border-radius: 3px; flex: none; }
+.etiqueta { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: .76rem; border: 1px solid var(--border); background: var(--surface-2); color: var(--text-secondary); white-space: nowrap; }
+.etiqueta.menor { border-color: var(--good); color: var(--good); }
+.etiqueta.maior { border-color: var(--series-2); color: var(--series-2); }
+
+/* ---------- gráficos ---------- */
+.grafico { position: relative; }
+.grafico svg { display: block; width: 100%; height: auto; overflow: visible; }
+.legenda { display: flex; flex-wrap: wrap; gap: 14px; margin: 2px 0 10px; font-size: .85rem; color: var(--text-secondary); }
+.legenda span.item { display: inline-flex; align-items: center; gap: 7px; }
+.legenda .ponto { width: 10px; height: 10px; border-radius: 3px; }
+.dica {
+  position: absolute; pointer-events: none; opacity: 0; transition: opacity .1s;
+  background: var(--surface-1); border: 1px solid var(--border); border-radius: 8px;
+  box-shadow: var(--shadow); padding: 8px 10px; font-size: .82rem; z-index: 10; min-width: 150px;
+}
+.dica .dica-data { color: var(--text-muted); margin-bottom: 4px; font-size: .78rem; }
+.dica ul { list-style: none; margin: 0; padding: 0; }
+.dica li { display: flex; align-items: center; gap: 7px; justify-content: space-between; }
+.dica li .nome { display: inline-flex; align-items: center; gap: 6px; }
+.dica .ponto { width: 8px; height: 8px; border-radius: 2px; flex: none; }
+.dica b { font-variant-numeric: tabular-nums; }
+.multiplos { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.multiplos .cartao { margin: 0; }
+
+/* ---------- downloads / rodapé ---------- */
+ul.arquivos { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+ul.arquivos a { color: var(--accent); text-decoration: none; font-weight: 600; }
+ul.arquivos a:hover { text-decoration: underline; }
+ul.arquivos li { padding: 12px 14px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface-1); }
+ul.arquivos .obs { display: block; color: var(--text-secondary); font-size: .85rem; }
+details.sql { margin-top: 10px; }
+details.sql summary { cursor: pointer; color: var(--text-secondary); font-size: .85rem; padding: 6px 0; }
+details.sql pre {
+  background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px;
+  padding: 12px; overflow-x: auto; font-size: .8rem; color: var(--text-primary); margin: 6px 0 0;
+}
+footer.rodape { border-top: 1px solid var(--border); margin-top: 32px; padding: 22px 0 40px; color: var(--text-secondary); font-size: .87rem; }
+footer.rodape p { margin: 0 0 6px; }
+
+@media (max-width: 640px) {
+  .topo h1 { font-size: 1.4rem; }
+  .campo select, .campo input { min-width: 100%; }
+  .campo { width: 100%; }
+}
